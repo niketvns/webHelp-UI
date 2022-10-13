@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kalam:wght@300;400;700&family=Sen:wght@400;700;800&display=swap');
+
+
+:root {
+    --nav-color: rgb(177, 180, 183);
+    --primary-color: teal;
+    --font-1: 'Handlee', cursive;
+    --font-2: 'Kalam', cursive;
+    --font-3: 'Sen', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.loader img {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+
+
+nav.desktop {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--nav-color);
+    padding: 10px;
+    font-family: var(--font-1);
+}
+
+nav.desktop .nav-left {
+    display: flex;
+    gap: 25px;
+    margin-left: 45px;
+}
+
+nav.desktop .nav-left img,
+nav.mobile .nav-left img {
+    width: 100px;
+    cursor: pointer;
+}
+
+nav.desktop .nav-left a {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+nav.desktop .nav-left ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav.desktop .nav-left li {
+    margin: 0px 20px;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+nav.desktop .nav-left li.active {
+    background-color: cadetblue;
+    border-radius: 10px;
+    color: white;
+}
+
+nav.desktop .nav-left li:hover:not(.active) {
+    text-decoration: underline;
+}
+
+nav.desktop .nav-right {
+    margin-right: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav.desktop .nav-right *:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+
+nav.mobile {
+    display: none;
+}
+
+nav.mobile .nav-head {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--nav-color);
+    font-family: var(--font-1);
+}
+
+nav.mobile .nav-right img {
+    width: 2rem;
+    cursor: pointer;
+}
+
+nav.mobile .nav-content {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    display: none;
+}
+
+nav.mobile .left-nav-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    width: 50vw;
+}
+
+nav.mobile .right-nav-content {
+    height: 100vh;
+    width: 50vw;
+    min-width: 250px;
+    background-color: white;
+    padding: 20px;
+}
+
+.close-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+    font-family: var(--font-2);
+    color: var(--primary-color);
+}
+
+.mobile-icons,
+.close-icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+
+nav.mobile .right-nav-content ul {
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+nav.mobile .right-nav-content ul a {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    color: black;
+}
+
+nav.mobile .right-nav-content ul a:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+nav.mobile .right-nav-content .nav-social {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+}
+
+
+
+
+
+
+header {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
+}
+
+header .left-header {
+    margin-top: 100px;
+    height: 80vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header .right-header {
+    width: 30vw;
+}
+
+header .left-header .slogan h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+header .left-header .slogan h1 span {
+    color: var(--primary-color);
+    font-family: var(--font-3);
+}
+
+header .left-header .slogan p {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.3rem;
+    font-family: var(--font-2);
+}
+
+header .left-header button {
+    font-size: 1.4rem;
+    padding: 14px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+header .left-header button:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+header .right-header img {
+    width: 25vw;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:700px) {
+    html {
+        font-size: 12px;
+    }
+
+    nav.mobile {
+        display: contents;
+    }
+
+    nav.desktop {
+        display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    header .logo-header img {
+        width: 200px;
+    }
+
+    header .right-header {
+        order: -1;
+        margin-top: 50px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .right-header img {
+        width: 60vw;
+    }
+
+    .slogan {
+        width: 90vw;
+    }
+
+
+
+    /* nav.mobile .left-nav-content {
+        width: 40vw;
+    }
+
+    nav.mobile .right-nav-content {
+        width: 60vw;
+    } */
+}
