@@ -309,7 +309,7 @@ nav.mobile .docs-close-outline {
     background-color: whitesmoke;
     padding: 20px;
     border: 0.5px solid rgba(0, 0, 0, 0.2);
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .left-docs h3 {
