@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/Images/favicon.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
@@ -11,11 +12,11 @@
 
 <body>
 
-    <!-- <div class="loader">
+    <div class="loader">
         <img src="/Images/loader.gif" alt="">
-    </div> -->
+    </div>
 
-    <nav class="desktop">
+    <nav class="desktop" onload="preload()">
         <div class="nav-left">
             <div class="logo-nav">
                 <a href="/"><img src="/Images/logo-final.png" alt="logo"></a>
@@ -24,7 +25,7 @@
                 <a href="/">
                     <li class="active">Home</li>
                 </a>
-                <a href="/documentation.html">
+                <a href="/html/documentation.html">
                     <li>Documentation</li>
                 </a>
             </ul>
@@ -50,29 +51,27 @@
             </div>
         </div>
 
-        <div class="nav-content-main">
-            <div class="nav-content">
-                <div class="left-nav-content"></div>
-                <div class="right-nav-content">
-                    <div class="close-nav">
-                        <h1 class="mobile-logo">WebHelpUI</h1>
-                        <img class="close-icon" src="/Images/close-outline.svg" alt="">
-                    </div>
-                    <ul>
-                        <a href="/">
-                            <img class="mobile-icons" src="/Images/home-outline.svg" alt="">
-                            <li class="active">Home</li>
-                        </a>
-                        <a href="/documentation.html">
-                            <img class="mobile-icons" src="/Images/logo-web-component.svg" alt="">
-                            <li>Documentation</li>
-                        </a>
-                    </ul>
-                    <div class="nav-social">
-                        <img src="/Images/github.png" alt="">
-                        <img src="/Images/linkedin.png" alt="">
-                        <img src="/Images/twitter.png" alt="">
-                    </div>
+        <div class="nav-content">
+            <div class="left-nav-content"></div>
+            <div class="right-nav-content">
+                <div class="close-nav">
+                    <h1 class="mobile-logo">WebHelpUI</h1>
+                    <img class="close-icon" src="/Images/close-outline.svg" alt="">
+                </div>
+                <ul>
+                    <a href="/">
+                        <img class="mobile-icons" src="/Images/home-outline.svg" alt="">
+                        <li class="active">Home</li>
+                    </a>
+                    <a href="/html/documentation.html">
+                        <img class="mobile-icons" src="/Images/logo-web-component.svg" alt="">
+                        <li>Documentation</li>
+                    </a>
+                </ul>
+                <div class="nav-social">
+                    <img src="/Images/github.png" alt="">
+                    <img src="/Images/linkedin.png" alt="">
+                    <img src="/Images/twitter.png" alt="">
                 </div>
             </div>
         </div>
@@ -87,10 +86,13 @@
             <div class="slogan">
                 <h1>Build Fast and Responsive Websites with <span class="whi-color">WebHelpUI</span>
                 </h1>
-                <p>In this era, you not need to code everythings. Just Focus on the logic.</p>
+                <p>Beautifully designed, expertly crafted components, built by the makers of WebHelpUI.
+                    The perfect starting point for your next project.</p>
             </div>
             <div class="get-started">
-                <button>Get Started</button>
+                <a href="/html/documentation.html">
+                    <button>Get Started</button>
+                </a>
             </div>
         </div>
 
@@ -99,7 +101,17 @@
         </div>
     </header>
 
+    <iframe
+        src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0%29&t=one-light&wt=bw&l=python&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=true&fl=1&fm=Inconsolata&fs=13.5px&lh=132%25&si=false&es=2x&wm=false&code=%253Chead%253E%250A%2520%2520%2520%2520%253Cmeta%2520charset%253D%2522UTF-8%2522%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522shortcut%2520icon%2522%2520href%253D%2522%2522%2520type%253D%2522image%252Fx-icon%2522%253E%250A%2520%2520%2520%2520%253Cmeta%2520http-equiv%253D%2522X-UA-Compatible%2522%2520content%253D%2522IE%253Dedge%2522%253E%250A%2520%2520%2520%2520%253Cmeta%2520name%253D%2522viewport%2522%2520content%253D%2522width%253Ddevice-width%252C%2520initial-scale%253D1.0%2522%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fwebhelp-ui.netlify.app%252Fcss%252Fstyle.css%2522%253E%250A%2520%2520%2520%2520%253Ctitle%253EHome%2520%257C%2520WebHelpUI%253C%252Ftitle%253E%250A%253C%252Fhead%253E"
+        style="margin: 15px 0px; width: 90vw; min-height: 350px; border:0; transform: scale(1); overflow:hidden;"
+        sandbox="allow-scripts allow-same-origin">
+    </iframe>
 
+
+    <footer>
+        <img src="/Images/logo-final.png" alt="logo">
+        <p>&copy; 2022 | WebHelpUI | All rights reserved.</p>
+    </footer>
 
 
 

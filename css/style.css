@@ -3,7 +3,8 @@
 
 :root {
     --nav-color: rgb(177, 180, 183);
-    --primary-color: teal;
+    --primary-color: rgb(0, 128, 128);
+    /*teal*/
     --font-1: 'Handlee', cursive;
     --font-2: 'Kalam', cursive;
     --font-3: 'Sen', sans-serif;
@@ -16,15 +17,21 @@
 }
 
 
-.loader img {
+.loader {
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 0;
     width: 100vw;
     height: 100vh;
+    background-color: rgba(255, 255, 255, 0.7);
     z-index: 1;
 }
 
-
+.loader img {
+    width: 200px;
+}
 
 nav.desktop {
     display: flex;
@@ -64,7 +71,7 @@ nav.desktop .nav-left li {
     cursor: pointer;
     padding: 10px;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 nav.desktop .nav-left li.active {
@@ -104,7 +111,8 @@ nav.mobile .nav-head {
     font-family: var(--font-1);
 }
 
-nav.mobile .nav-right img {
+nav.mobile .nav-right img,
+.docs-menu img {
     width: 2rem;
     cursor: pointer;
 }
@@ -145,6 +153,12 @@ nav.mobile .right-nav-content {
     cursor: pointer;
 }
 
+.close-icon {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+}
+
 
 nav.mobile .right-nav-content ul {
     list-style: none;
@@ -177,11 +191,6 @@ nav.mobile .right-nav-content .nav-social {
     justify-content: center;
     gap: 10%;
 }
-
-
-
-
-
 
 header {
     height: 80vh;
@@ -224,13 +233,19 @@ header .left-header .slogan p {
 }
 
 header .left-header button {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     padding: 14px;
     border-radius: 20px;
     border: none;
     background-color: var(--primary-color);
     color: white;
     cursor: pointer;
+}
+
+header .left-header button:hover {
+    color: black;
+    background-color: rgb(108, 148, 154);
+    transition: 0.2s;
 }
 
 header .left-header button:active {
@@ -253,6 +268,102 @@ header .right-header img {
     }
 }
 
+footer {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+footer img {
+    width: 100px;
+    display: block;
+}
+
+
+
+
+/* Documentation  */
+
+nav.mobile .docs-close-outline {
+    display: none;
+}
+
+.main-docs {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.left-docs {
+    width: 250px;
+    height: 89vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: whitesmoke;
+    padding: 20px;
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+.left-docs h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-left: -20px;
+}
+
+.left-docs .menu2 {
+    margin-top: 40px;
+}
+
+.left-docs img {
+    width: 25px;
+}
+
+.left-docs ul {
+    list-style: none;
+    margin: 15px 0px 15px 15px;
+}
+
+.left-docs ul li {
+    width: fit-content;
+    margin: 6px 0px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.left-docs ul li:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.06);
+}
+
+.left-docs ul li.active {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.right-docs {
+    width: 85vw;
+    height: 90vh;
+    background-color: aquamarine;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: var(--font-2);
+}
 
 
 
@@ -270,7 +381,13 @@ header .right-header img {
     nav.desktop {
         display: none;
     }
+
+    nav.docs-mobile {
+        display: grid;
+        grid-template-columns: 3;
+    }
 }
+
 
 @media screen and (max-width:600px) {
 
@@ -280,6 +397,16 @@ header .right-header img {
         align-items: center;
         justify-content: center;
         gap: 0px;
+    }
+
+    header .left-header {
+        height: fit-content;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
     }
 
     header .logo-header img {
@@ -302,13 +429,36 @@ header .right-header img {
         width: 90vw;
     }
 
-
-
-    /* nav.mobile .left-nav-content {
-        width: 40vw;
+    nav.mobile .left-nav-content {
+        width: 20vw;
     }
 
     nav.mobile .right-nav-content {
-        width: 60vw;
-    } */
+        width: 80vw;
+    }
+
+    .left-docs {
+        height: 90vh;
+        position: absolute;
+        top: 0;
+        left: -300px;
+        transition: 0.6s;
+    }
+
+    .right-docs {
+        width: 100vw;
+    }
+}
+
+
+@media screen and (min-width:600px) {
+    .docs-menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .left-docs {
+        width: 100vw;
+    }
 }
