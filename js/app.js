@@ -40,3 +40,15 @@ closeNavAnyWay.addEventListener("click", closeMenu);
 docsMenuOutline.addEventListener("click", showDocsMenu);
 docsCloseOutline.addEventListener("click", closeDocsMenu);
 rightDocs.addEventListener("click", closeDocsMenu);
+
+
+var left_menu = document.getElementById("left-header-menu");
+var li = left_menu.getElementsByTagName("li");
+for (var i = 0; i < li.length; i++) {
+    li[i].addEventListener("click", function () {
+        var current = left_menu.getElementsByClassName("active");
+        current[0].className = current[0].className.replace("active", "");
+        this.className += "active";
+        closeDocsMenu();
+    });
+}
