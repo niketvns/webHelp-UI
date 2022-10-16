@@ -25,10 +25,11 @@ const showDocsMenu = () => {
     leftDocs.style.left = "0px"
     docsCloseOutline.style.display = "block";
     docsMenuOutline.style.display = "none";
+    leftDocs.style.display = "flex";
 }
 
 const closeDocsMenu = () => {
-    leftDocs.style.left = "-300px"
+    leftDocs.style.left = "-350px"
     docsCloseOutline.style.display = "none";
     docsMenuOutline.style.display = "block";
 }
@@ -42,11 +43,12 @@ docsCloseOutline.addEventListener("click", closeDocsMenu);
 rightDocs.addEventListener("click", closeDocsMenu);
 
 
-var left_menu = document.getElementById("left-header-menu");
-var li = left_menu.getElementsByTagName("li");
-for (var i = 0; i < li.length; i++) {
+let left_menu = document.getElementById("left-header-menu");
+let li = left_menu.getElementsByTagName("li");
+
+for (let i = 0; i < li.length; i++) {
     li[i].addEventListener("click", function () {
-        var current = left_menu.getElementsByClassName("active");
+        let current = left_menu.getElementsByClassName("active");
         current[0].className = current[0].className.replace("active", "");
         this.className += "active";
         closeDocsMenu();
