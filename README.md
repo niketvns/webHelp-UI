@@ -8,7 +8,7 @@ This is a component Library, Where you can find all UI for your site like Button
 
 ## Docs
 
-![image](https://user-images.githubusercontent.com/91107518/195837074-d1cc0473-158a-403d-9edb-e56f8a78933f.png)
+![image](https://user-images.githubusercontent.com/91107518/196019266-a63b2c2f-4fac-4960-ba16-d3b859806cb2.png)
 
 
 # Technology
