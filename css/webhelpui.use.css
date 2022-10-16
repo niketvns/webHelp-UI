@@ -104,6 +104,9 @@ nav.desktop .nav-right *:hover {
 
 nav.mobile {
     display: none;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 nav.mobile .nav-head {
