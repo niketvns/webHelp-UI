@@ -1,5 +1,5 @@
 # webHelp-UI
-This is a component Library, Where you can find all UI for your site like Button, Navbar, Forms, Tables, Alert, Avatar etc. 
+This is a component Library, Where you can find all UI for your site like Button, Navbar, Forms, Tables, Alert, Avatar etc. Just add CDN links of CSS and JS and Get Your UI in your website within second.
 
 # [LIVE](https://webhelp-ui.netlify.app/)
 
