@@ -197,6 +197,11 @@ nav.mobile .right-nav-content .nav-social {
     gap: 10%;
 }
 
+::selection {
+    background-color: var(--primary-color);
+    color: white;
+}
+
 /* Header for Index.html  */
 
 header {
