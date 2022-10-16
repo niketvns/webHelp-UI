@@ -445,7 +445,7 @@ nav.mobile .docs-close-outline {
     min-height: 90vh;
 }
 
-.right-docs ol {
+.right-docs ol li {
     margin: 25px;
 }
 
@@ -585,6 +585,14 @@ button#btn-secondary:hover {
 
     header .logo-header img {
         width: 200px;
+    }
+
+    header .get-started {
+        margin: 0px 0px 30px 0px;
+    }
+
+    header .get-started button {
+        width: 130px;
     }
 
     header .right-header {
