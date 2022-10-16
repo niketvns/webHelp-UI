@@ -6,11 +6,12 @@
     <link rel="shortcut icon" href="/Images/favicon.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/webhelpui.use.css">
+    <script src="/js/code-snippet.js"></script>
     <title>Get Started with WH-UI</title>
 </head>
 
-<body>
+<body class="documentation">
 
     <nav class="desktop">
         <div class="nav-left">
@@ -84,13 +85,13 @@
                 <div class="menu1 menu">
                     <h3> <img src="/Images/book.png" alt=""> Getting Started</h3>
                     <ul>
-                        <a href="#">
+                        <a href="#introduction-docs">
                             <li class="active">Introduction</li>
                         </a>
-                        <a href="#">
+                        <a href="#installation-docs">
                             <li>Installation</li>
                         </a>
-                        <a href="#">
+                        <a href="#devices-docs">
                             <li>Browsers & Devices</li>
                         </a>
                     </ul>
@@ -135,6 +136,9 @@
                             <li>Scrollbar</li>
                         </a>
                         <a href="#">
+                            <li>Code Snippet</li>
+                        </a>
+                        <a href="#">
                             <li>Footer</li>
                         </a>
                     </ul>
@@ -144,13 +148,186 @@
         </div>
 
         <div class="right-docs">
-            <div class="introduction-docs">
+            <div class="docs-component" id="introduction-docs">
                 <h1>Getting Started with WebHelpUI</h1>
+                <p>WebHelpUI is a powerful, feature-packed frontend Component Library. Just Think what you want to Build
+                    on your website and WebHelpUI Provides it in just a
+                    minutes.
+                </p>
+                <h2>Quick start</h2>
+                <p>Get started by including WenHelpUI production-ready CSS and JavaScript via CDN links without the need
+                    for
+                    any build steps.</p>
+                <ol>
+                    <li>Create a new <code>index.html</code> file in your project root. Include the
+                        <code>&lt;meta name="viewport"&gt;</code> tag as well for proper responsive behavior in mobile
+                        devices.
+                    </li>
+
+                    <pre class="language-html"><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;tilte&gt;WebHelpUI demo &lt;/tilte&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Namaste 🙏, world!&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+                    <li>
+                        Include WebHelpUI's CSS and JS. &Place the <code>&lt;link&gt;</code> tag in the
+                        <code>&lt;head&gt;&lt;/head&gt;</code> for our CSS, and the
+                        <code>&lt;script&gt;&lt;/script&gt;</code> tag for our JavaScript bundle before the closing
+                        <code>&lt;/body&gt;</code>
+                    </li>
+
+                    <pre class="language-html"><code>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+        &lt;title&gt;WebHelpUI demo &lt;/title&gt;
+        &lt;link href="https://webhelp-ui.netlify.app/css/webhelpui.use.css" rel="stylesheet" &gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Namaste 🙏, world!    &lt;/h1&gt;
+        &lt;script src="https://webhelp-ui.netlify.app/js/webhelpui.use.js" &gt;  &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+
+                    <li>
+                        Namaste 🙏, world! Open the page in your browser to see your rendered page. Now you can
+                        start building with WebHelpUI by creating your own layout, adding dozens of components, and
+                        utilizing our official examples.
+                    </li>
+                </ol>
+                <hr>
             </div>
+
+
+            <div class="docs-component" id="installation-docs">
+                <h1>How to install ?</h1>
+                <p>To use all features of WebHelpUI, Just Add CDN link of CSS and JS in <code>head</code> tag of
+                    <code>index.html</code> file. After adding CDN links Just search for your UI like navbar, button,
+                    form etc in WebHelpUI components and Copy the HTML code given then add the code in your HTML file
+                    where you want to add this UI.
+                </p>
+
+                <h2>CDN Link</h2>
+                <pre class="language-html"><code>&lt;link rel="stylesheet" href="https://webhelp-ui.netlify.app/css/webhelpui.use.css"&gt;
+&lt;script src="https://webhelp-ui.netlify.app/js/webhelpui.use.js"&gt;&lt;/script&gt;</code></pre>
+
+                <h3>Examples: <small>Add button in your website</small></h3>
+
+                <ol>
+                    <li>Add CDN Link of css and JavaScript(JS optional) in <code>head</code> tag</li>
+                    <pre class="language-html"><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;link rel="stylesheet" href="https://webhelp-ui.netlify.app/css/webhelpui.use.css"&gt;
+    &lt;script src="https://webhelp-ui.netlify.app/js/webhelpui.use.js" &gt;&lt;/script&gt;
+    &lt;title&gt;Button-Preview&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+
+                    <li>Copy the HTML code of Button of your choice from WebHelpUI components</li>
+                    <div class="button-preview">
+                        <button id="btn-primary">Primary</button>
+                        <button id="btn-secondary">Secondary</button>
+                    </div>
+                    <pre class="language-html"><code>&lt;button id="btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button id="btn-secondary"&gt;Secondary&lt;/button&gt;</code></pre>
+                </ol>
+
+
+                <hr>
+            </div>
+
+            <div class="docs-component" id="devices-docs">
+                <h1>Browsers and devices</h1>
+                <p>WebHelpUI supported in all Browsers and all devices.
+                </p>
+                <h2>Supported Browsers</h2>
+                <ul>
+                    <li>Chrome</li>
+                    <li>FireFox</li>
+                    <li>Safari</li>
+                    <li>Microsoft Edge</li>
+                    <li>Opera</li>
+                    <li>Brave</li>
+                    <li>Both Android Browsers & Desktop Browsers</li>
+                </ul>
+                <h2>Responsiveness</h2>
+                <p>A great way to create a responsive design, is to use a responsive style sheet, like
+                    <code>webhelpui.use.css</code>.
+                    WebHelpUI makes it easy to develop sites that look nice at any size!
+                </p>
+                <p>All UI which you will use from WebHelpUI components is fully responsive and changes according to the
+                    screen size.</p>
+                <h3>Example: </h3>
+                <p>Let's Take an Exapmle of Navbar in Desktop and Mobile</p>
+                <div class="mobile-desktop-nav-preview">
+                    <div class="desktop-nav-preview">
+                        <nav class="desktop">
+                            <div class="nav-left">
+                                <div class="logo-nav">
+                                    <a href="#devices-docs"><img src="/Images/logo-final.png" alt="logo"></a>
+                                </div>
+                                <ul>
+                                    <a href="#devices-docs">
+                                        <li class="active">Home</li>
+                                    </a>
+                                    <a href="#devices-docs">
+                                        <li>Documentation</li>
+                                    </a>
+                                </ul>
+                            </div>
+
+                            <div class="nav-right">
+                                <img src="/Images/github.png" alt="">
+                                <img src="/Images/linkedin.png" alt="">
+                                <img src="/Images/twitter.png" alt="">
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="mobile-nav-preview">
+                        <b>Mobile & Tablets</b>
+                        <nav class="mobile">
+                            <div class="nav-head">
+                                <div class="nav-left">
+                                    <div class="logo-nav">
+                                        <a href="#devices-docs"><img src="/Images/logo-final.png" alt="logo"></a>
+                                    </div>
+                                </div>
+
+                                <div class="nav-right">
+                                    <img src="/Images/menu-outline.svg" alt="">
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                </div>
+                <h2>Devices</h2>
+                <p>We have devided all the devices into three categories based on their screen width.</p>
+                <ul style="margin: 20px 0px;">
+                    <li>Mobile Devices ( <code>width < 550px</code> )</li>
+                    <li>Tablets ( <code>550px < width < 800px</code> ) </li>
+                    <li>Desktop Devices ( <code>width > 800px</code> )</li>
+                </ul>
+
+                <hr>
+            </div>
+
+
         </div>
     </div>
 
-    <script src="/js/app.js"></script>
+    <script src="/js/webhelpui.use.js"></script>
 </body>
 
 </html>
