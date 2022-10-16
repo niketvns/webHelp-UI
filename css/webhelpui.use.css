@@ -104,9 +104,9 @@ nav.desktop .nav-right *:hover {
 
 nav.mobile {
     display: none;
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 2; */
 }
 
 nav.mobile .nav-head {
@@ -116,6 +116,9 @@ nav.mobile .nav-head {
     align-items: center;
     background-color: var(--nav-color);
     font-family: var(--font-1);
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 nav.mobile .nav-right img,
