@@ -439,7 +439,6 @@ nav.mobile .docs-close-outline {
 .right-docs {
     width: 85vw;
     height: 85vh;
-    height: -webkit-fill-available;
     overflow-y: auto;
     color: #000000cc;
     font-family: var(--font-3);
