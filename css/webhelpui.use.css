@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kalam:wght@300;400;700&family=Sen:wght@400;700;800&display=swap');
 @import url("/css/code-snippet.css");
+@import url("/css/button.css");
 
 :root {
     --nav-color: rgb(177, 180, 183);
@@ -549,7 +550,7 @@ button#btn-secondary:hover {
 
 @media screen and (max-width:700px) {
     html {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     nav.mobile {
