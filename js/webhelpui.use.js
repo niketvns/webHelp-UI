@@ -45,6 +45,16 @@ rightDocs.addEventListener("click", closeDocsMenu);
 
 let left_menu = document.getElementById("left-header-menu");
 let li = left_menu.getElementsByTagName("li");
+let docsComponent = document.querySelectorAll(".right-docs .docs-component");
+
+
+const docsVisibility = (val) => {
+    if (val < 4) {
+        let current = document.querySelector(".right-docs .visible");
+        current.className = current.className.replace("visible", "invisible");
+        docsComponent[val].className = docsComponent[1].className.replace("invisible", "visible");
+    }
+}
 
 for (let i = 0; i < li.length; i++) {
     li[i].addEventListener("click", function () {
@@ -52,5 +62,7 @@ for (let i = 0; i < li.length; i++) {
         current[0].className = current[0].className.replace("active", "");
         this.className += "active";
         closeDocsMenu();
+        let val = i;
+        docsVisibility(val)
     });
 }

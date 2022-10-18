@@ -25,7 +25,7 @@
     gap: 10px;
 }
 
-#buttons-docs .solid-btn .btn {
+.btn {
     font-size: 1.1rem;
     font-family: var(--font-3);
     padding: 10px;
@@ -35,56 +35,56 @@
     cursor: pointer;
 }
 
-#buttons-docs .solid-btn .btn:hover {
+.btn:hover {
     opacity: 80%;
 }
 
-#buttons-docs .solid-btn .btn:active {
+.btn:active {
     transform: scale(0.95);
     transition: 0.1s;
 }
 
-#buttons-docs .solid-btn .btn-primary {
+.btn-primary {
     background-color: var(--primary-color);
     color: white;
 }
 
-#buttons-docs .solid-btn .btn-secondary {
+.btn-secondary {
     background-color: var(--nav-color);
     color: var(--primary-color);
 }
 
-#buttons-docs .solid-btn .btn-success {
+.btn-success {
     background-color: var(--success-color);
     color: white;
 }
 
-#buttons-docs .solid-btn .btn-danger {
+.btn-danger {
     background-color: var(--danger-color);
     color: white;
 }
 
-#buttons-docs .solid-btn .btn-warning {
+.btn-warning {
     background-color: var(--warning-color);
     color: white;
 }
 
-#buttons-docs .solid-btn .btn-info {
+.btn-info {
     background-color: var(--info-color);
     color: white;
 }
 
-#buttons-docs .solid-btn .btn-light {
+.btn-light {
     background-color: var(--light-color);
     color: white;
 }
 
-#buttons-docs .solid-btn .btn-dark {
+.btn-dark {
     background-color: var(--dark-color);
     color: white;
 }
 
-#buttons-docs .solid-btn .btn-link {
+.btn-link {
     background-color: transparent;
     color: var(--secondary-color);
     text-decoration: underline;

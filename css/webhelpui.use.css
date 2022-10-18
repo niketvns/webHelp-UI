@@ -537,6 +537,14 @@ button#btn-secondary:hover {
     display: contents;
 }
 
+.right-docs .invisible {
+    display: none;
+}
+
+.right-docs .visible {
+    display: contents;
+}
+
 
 /* Media Query for Responsiveness  */
 
