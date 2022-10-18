@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kalam:wght@300;400;700&family=Sen:wght@400;700;800&display=swap');
 @import url("/css/code-snippet.css");
 @import url("/css/button.css");
+@import url("/css/avatar.css");
 
 :root {
     --nav-color: rgb(177, 180, 183);
@@ -457,6 +458,7 @@ nav.mobile .docs-close-outline {
 code:not(.language-html code) {
     color: red;
     background-color: #0000001a;
+    display: inline-block;
 }
 
 .right-docs h1,
