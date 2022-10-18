@@ -204,7 +204,7 @@
                         utilizing our official examples.
                     </li>
                 </ol>
-                <hr>
+
             </div>
 
 
@@ -243,7 +243,7 @@
                 </ol>
 
 
-                <hr>
+
             </div>
 
             <div class="invisible docs-component" id="devices-docs">
@@ -320,7 +320,7 @@
                     <li>Desktop Devices ( <code>width > 800px</code> )</li>
                 </ul>
 
-                <hr>
+
             </div>
 
             <div class="invisible docs-component" id="buttons-docs">
@@ -331,10 +331,14 @@
                     requirement</p>
                 <ol>
                     <li>Solid Buttons</li>
-                    <li>Tag Buttons</li>
                     <li>Outlined Buttons</li>
+                    <li>Tag Buttons</li>
                 </ol>
+
                 <h2>Solid Buttons</h2>
+                <p>These buttons are build with <code>button</code> tag and <code>anchor</code> tag so you can add link
+                    here also
+                </p>
                 <div class="solid-btn">
                     <a href="#"><button class="btn btn-primary">Primary</button></a>
                     <a href="#"><button class="btn btn-secondary">Secondary</button></a>
@@ -355,8 +359,61 @@
 &lt;a href="#"&gt;&lt;button class="btn btn-light"&gt;Light&lt;/button&gt;&lt;/a&gt;
 &lt;a href="#"&gt;&lt;button class="btn btn-dark"&gt;Dark&lt;/button&gt;&lt;/a&gt;
 &lt;a href="#"&gt;&lt;button class="btn btn-link"&gt;Link&lt;/button&gt;&lt;/a&gt;</code></pre>
-            </div>
 
+
+
+                <h2>Outlined Buttons</h2>
+                <p>These buttons are build with <code>button</code> tag and <code>anchor</code> tag so you can add link
+                    here. If you not need to add link in button then you can just remove <code>anchor</code> tag.
+                </p>
+                <div class="outlined-btn">
+                    <a href="#"><button class="btn btn-outlined-primary">Primary</button></a>
+                    <a href="#"><button class="btn btn-outlined-secondary">Secondary</button></a>
+                    <a href="#"><button class="btn btn-outlined-success">Success</button></a>
+                    <a href="#"><button class="btn btn-outlined-danger">Danger</button></a>
+                    <a href="#"><button class="btn btn-outlined-warning">Warning</button></a>
+                    <a href="#"><button class="btn btn-outlined-info">Info</button></a>
+                    <a href="#"><button class="btn btn-outlined-light">Light</button></a>
+                    <a href="#"><button class="btn btn-outlined-dark">Dark</button></a>
+                    <a href="#"><button class="btn btn-outlined-link">Link</button></a>
+                </div>
+                <pre class="language-html"><code>&lt;a href="#"&gt;&lt;button class="btn btn-outlined-primary"&gt;Primary&lt;/button&gt;&lt;/a&gt;
+&lt;a href="#"&gt;&lt;button class="btn btn-outlined-secondary"&gt;Secondary&lt;/button&gt;&lt;/a&gt;
+&lt;a href="#"&gt;&lt;button class="btn btn-outlined-success"&gt;Success&lt;/button&gt;&lt;/a&gt;
+&lt;a href="#"&gt;&lt;button class="btn btn-outlined-danger"&gt;Danger&lt;/button&gt;&lt;/a&gt;
+&lt;a href="#"&gt;&lt;button class="btn btn-outlined-warning"&gt;Warning&lt;/button&gt;&lt;/a&gt;
+&lt;a href="#"&gt;&lt;button class="btn btn-outlined-info"&gt;Info&lt;/button&gt;&lt;/a&gt;
+&lt;a href="#"&gt;&lt;button class="btn btn-outlined-light"&gt;Light&lt;/button&gt;&lt;/a&gt;
+&lt;a href="#"&gt;&lt;button class="btn btn-outlined-dark"&gt;Dark&lt;/button&gt;&lt;/a&gt;
+&lt;a href="#"&gt;&lt;button class="btn btn-outlined-link"&gt;Link&lt;/button&gt;&lt;/a&gt;</code></pre>
+
+
+
+                <h2>Tag Buttons</h2>
+
+                <p>Some of Tag buttons will work with form so you can use <code>Submit</code>, <code>Reset</code> button
+                    to submit
+                    the form or reset the
+                    entered value in the form.</p>
+                <p>In the <code>Link</code> Button you can add Link of another page/url or any ID of your document to
+                    redirect there.</p>
+
+                <div class="tags-btn">
+                    <button type="submit" class="btn btn-tags">Button</button>
+                    <input type="reset" class="btn btn-tags" value="Reset">
+                    <input type="button" class="btn btn-tags" value="Input">
+                    <input type="submit" class="btn btn-tags" value="Submit">
+                    <a href="#" class="btn btn-tags">Link</a>
+                </div>
+                <pre class="language-html"><code>&lt;button type="submit" class="btn btn-tags"&gt;Button&lt;/button&gt;
+&lt;input type="reset" class="btn btn-tags" value="Reset"&gt;
+&lt;input type="button" class="btn btn-tags" value="Input"&gt;
+&lt;input type="submit" class="btn btn-tags" value="Submit"&gt;
+&lt;a href="#" class="btn btn-primary"&gt;Link&lt;/a&gt;</code></pre>
+
+
+
+            </div>
 
         </div>
     </div>

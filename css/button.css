@@ -3,20 +3,24 @@
 :root {
     --nav-color: rgb(177, 180, 183);
     --primary-color: rgb(0, 128, 128);
-    --secondary-color: #1e40af;
+    --secondary-color: #475569;
+    --tag-color: #1e40af;
     --success-color: #115e59;
-    --danger-color: #881337;
+    --danger-color: #9f1239;
     --warning-color: #92400e;
     --info-color: #6b21a8;
     --light-color: #60a5fa;
     --dark-color: #27272a;
+    --tags-color: #1d4ed8;
     --footer-color: rgb(235, 235, 235);
     --font-1: 'Handlee', cursive;
     --font-2: 'Kalam', cursive;
     --font-3: 'Sen', sans-serif;
 }
 
-#buttons-docs .solid-btn {
+#buttons-docs .solid-btn,
+#buttons-docs .outlined-btn,
+#buttons-docs .tags-btn {
     margin: 25px 0px;
     display: flex;
     justify-content: center;
@@ -33,9 +37,10 @@
     border: none;
     box-shadow: 2px 2px 20px #00000033;
     cursor: pointer;
+    transition: 0.4s;
 }
 
-.btn:hover {
+.btn:hover:not(button[class*=btn-outlined-]) {
     opacity: 80%;
 }
 
@@ -50,8 +55,8 @@
 }
 
 .btn-secondary {
-    background-color: var(--nav-color);
-    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: white;
 }
 
 .btn-success {
@@ -86,6 +91,107 @@
 
 .btn-link {
     background-color: transparent;
+    color: var(--tag-color);
+    text-decoration: underline;
+}
+
+.btn-outlined-primary {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outlined-secondary {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-outlined-success {
+    border: 1px solid var(--success-color);
+    color: var(--success-color);
+}
+
+.btn-outlined-danger {
+    border: 1px solid var(--danger-color);
+    color: var(--danger-color);
+}
+
+.btn-outlined-warning {
+    border: 1px solid var(--warning-color);
+    color: var(--warning-color);
+}
+
+.btn-outlined-info {
+    border: 1px solid var(--info-color);
+    color: var(--info-color);
+}
+
+.btn-outlined-light {
+    border: 1px solid var(--light-color);
+    color: var(--light-color);
+}
+
+.btn-outlined-dark {
+    border: 1px solid var(--dark-color);
+    color: var(--dark-color);
+}
+
+.btn-outlined-link {
+    border: 1px solid transparent;
     color: var(--secondary-color);
     text-decoration: underline;
+}
+
+.btn-outlined-primary:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-outlined-secondary:hover {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.btn-outlined-success:hover {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.btn-outlined-danger:hover {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.btn-outlined-warning:hover {
+    background-color: var(--warning-color);
+    color: white;
+}
+
+.btn-outlined-info:hover {
+    background-color: var(--info-color);
+    color: white;
+}
+
+.btn-outlined-light:hover {
+    background-color: var(--light-color);
+    color: white;
+}
+
+.btn-outlined-dark:hover {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.btn-outlined-link:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.btn-tags {
+    background-color: var(--tags-color);
+    color: white;
+}
+
+#buttons-docs .tags-btn a {
+    text-decoration: none;
 }
