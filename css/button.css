@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kalam:wght@300;400;700&family=Sen:wght@400;700;800&display=swap');
+
+:root {
+    --nav-color: rgb(177, 180, 183);
+    --primary-color: rgb(0, 128, 128);
+    --secondary-color: #1e40af;
+    --success-color: #115e59;
+    --danger-color: #881337;
+    --warning-color: #92400e;
+    --info-color: #6b21a8;
+    --light-color: #60a5fa;
+    --dark-color: #27272a;
+    --footer-color: rgb(235, 235, 235);
+    --font-1: 'Handlee', cursive;
+    --font-2: 'Kalam', cursive;
+    --font-3: 'Sen', sans-serif;
+}
+
+#buttons-docs .solid-btn {
+    margin: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#buttons-docs .solid-btn .btn {
+    font-size: 1.1rem;
+    font-family: var(--font-3);
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 2px 20px #00000033;
+    cursor: pointer;
+}
+
+#buttons-docs .solid-btn .btn:hover {
+    opacity: 80%;
+}
+
+#buttons-docs .solid-btn .btn:active {
+    transform: scale(0.95);
+    transition: 0.1s;
+}
+
+#buttons-docs .solid-btn .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+#buttons-docs .solid-btn .btn-secondary {
+    background-color: var(--nav-color);
+    color: var(--primary-color);
+}
+
+#buttons-docs .solid-btn .btn-success {
+    background-color: var(--success-color);
+    color: white;
+}
+
+#buttons-docs .solid-btn .btn-danger {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+#buttons-docs .solid-btn .btn-warning {
+    background-color: var(--warning-color);
+    color: white;
+}
+
+#buttons-docs .solid-btn .btn-info {
+    background-color: var(--info-color);
+    color: white;
+}
+
+#buttons-docs .solid-btn .btn-light {
+    background-color: var(--light-color);
+    color: white;
+}
+
+#buttons-docs .solid-btn .btn-dark {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+#buttons-docs .solid-btn .btn-link {
+    background-color: transparent;
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
