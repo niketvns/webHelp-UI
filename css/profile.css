@@ -42,8 +42,9 @@
     cursor: pointer;
 }
 
-.profile-box img:hover {
-    transform: scale(0.99);
+.crl-profile-box img:hover,
+.squre-profile-box img:hover {
+    transform: scale(0.95);
     transition: 0.1s;
 }
 
