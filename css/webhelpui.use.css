@@ -2,6 +2,7 @@
 @import url("/css/code-snippet.css");
 @import url("/css/button.css");
 @import url("/css/profile.css");
+@import url("/css/alert.css");
 
 :root {
     --nav-color: rgb(177, 180, 183);
@@ -451,8 +452,12 @@ nav.mobile .docs-close-outline {
     min-height: 90vh;
 }
 
+.right-docs ol {
+    margin: 20px;
+}
+
 .right-docs ol li {
-    margin: 25px;
+    margin: 6px;
 }
 
 code:not(.language-html code) {
@@ -560,7 +565,7 @@ button#btn-secondary:hover {
 
 @media screen and (max-width:700px) {
     html {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     nav.mobile {
@@ -661,7 +666,7 @@ button#btn-secondary:hover {
 
 @media screen and (max-width:350px) {
     html {
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .left-docs {
