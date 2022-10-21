@@ -67,3 +67,28 @@ for (let i = 0; i < li.length; i++) {
         docsVisibility(val)
     });
 }
+
+
+let alertComponent = document.querySelectorAll("div.alert");
+let alertComponentClose = document.querySelectorAll("div.alert span");
+
+const closeAlert = (ind) => {
+    alertComponent[ind].style.display = "none";
+}
+
+for (let i = 0; i < alertComponentClose.length; i++) {
+    alertComponentClose[i].addEventListener("click", () => {
+        let val = i;
+        closeAlert(val);
+    });
+}
+
+// Showing Alert on button click 
+
+let showAlertBtn = document.querySelector(".show-alert-btn")
+showAlertBtn.addEventListener("click", showAlert);
+
+function showAlert() {
+    let alertPreview = document.querySelector(".alert-invisible");
+    alertPreview.style.display = "flex";
+}

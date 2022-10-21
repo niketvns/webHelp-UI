@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kalam:wght@300;400;700&family=Sen:wght@400;700;800&display=swap');
+
+:root {
+    --nav-color: rgb(177, 180, 183);
+    --alert-primary-color: rgb(138, 235, 235);
+    --alert-secondary-color: #98bdf0;
+    --alert-success-color: #5c9894;
+    --alert-danger-color: #df9393;
+    --alert-warnin-color: #ddb7a0;
+    --primary-color: rgb(0, 128, 128);
+    --secondary-color: #475569;
+    --tag-color: #1e40af;
+    --success-color: #115e59;
+    --danger-color: #7f1d1d;
+    --warning-color: #92400e;
+    --info-color: #6b21a8;
+    --footer-color: rgb(235, 235, 235);
+    --font-1: 'Handlee', cursive;
+    --font-2: 'Kalam', cursive;
+    --font-3: 'Sen', sans-serif;
+}
+
+.alerts-all {
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+
+
+.alert {
+    width: 70%;
+    margin: 10px 10px;
+    max-width: 600px;
+    min-height: 50px;
+    padding: 10px 35px 15px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.alert-invisible {
+    display: none;
+}
+
+.alert span {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    background-color: var(--info-color);
+    color: #b1b1b1;
+    border-radius: 50%;
+}
+
+.alert span:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.alert-primary {
+    background-color: var(--alert-primary-color);
+    color: var(primary-color);
+}
+
+.alert-secondary {
+    background-color: var(--alert-secondary-color);
+    color: var(secondary-color);
+}
+
+.alert-success {
+    background-color: var(--alert-success-color);
+    color: var(success-color);
+}
+
+.alert-danger {
+    background-color: var(--alert-danger-color);
+    color: var(danger-color);
+}
+
+.alert-warning {
+    background-color: var(--alert-warnin-color);
+    color: var(warnin-color);
+}
+
+@media screen and (max-width:700px) {
+    .alert {
+        width: 90%
+    }
+}
