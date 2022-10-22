@@ -111,7 +111,7 @@
                         <a href="#badge-docs">
                             <li>Badge</li>
                         </a>
-                        <a href="#">
+                        <a href="#card-docs">
                             <li>Card</li>
                         </a>
                         <a href="#">
@@ -148,7 +148,7 @@
         </div>
 
         <div class="right-docs">
-            <div class="visible docs-component" id="introduction-docs">
+            <div class="invisible docs-component" id="introduction-docs">
                 <h1>Getting Started with WebHelpUI</h1>
                 <p>WebHelpUI is a powerful, feature-packed frontend Component Library. Just Think what you want to Build
                     on your website and WebHelpUI Provides it in just a
@@ -724,6 +724,121 @@
 &lt;button class="btn btn-info badge-positioned-2"&gt;
     Profile &lt;span class="positioned-badge-text"&gt;&lt;/span&gt;
 &lt;/button&gt;</code></pre>
+
+            </div>
+
+            <div class="visible docs-component" id="card-docs">
+                <h1>Cards</h1>
+                <p>A <b>card</b> is a flexible and extensible content container. It includes options for headers and
+                    footers, a
+                    wide variety of content, contextual background colors, and powerful display options</p>
+                <p>WebHelpUI provides different types of Cards, you can pick any of them
+                    according to your
+                    requirement. Just Add CDN Link in your <code>head</code> tag and copy-paste the HTML code then you
+                    will
+                    get a card.
+                </p>
+
+                <h2>Sample Cards - 1</h2>
+                <div class="card-1">
+                    <div class="imgText">
+                        <div class="img">
+                            <img src="/Images/card-img-1.png" alt="image">
+                        </div>
+                        <div class="text">
+                            <h2>Content Heading</h1>
+                                <p>this is the body of content</p>
+                        </div>
+                    </div>
+                    <div class="below">
+                        <a href="#">READ</a>
+                        <a href="#">BOOKMARK</a>
+                        <span>🤍</span>
+                        <span><img class="card-1-icon" src="/Images/share-icon-card.svg" /></span>
+                        <span><img class="card-1-icon" src="/Images/vertical-three-dot.png" /></span>
+                    </div>
+                </div>
+
+                <pre class="language-html"><code>&lt;div class="card-1"&gt;
+    &lt;div class="imgText"&gt;
+        &lt;div class="img"&gt;
+            &lt;img src="/Images/card-img-1.png" alt="image"&gt;
+        &lt;/div&gt;
+        &lt;div class="text"&gt;
+            &lt;h2&gt;Content Heading&lt;/h1&gt;
+            &lt;p&gt;this is the body of content&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="below"&gt;
+        &lt;a href="#"&gt;READ&lt;/a&gt;
+        &lt;a href="#"&gt;BOOKMARK&lt;/a&gt;
+        &lt;span&gt;🤍&lt;/span&gt;
+        &lt;span&gt;&lt;img class="card-1-icon" src="/Images/share-icon-card.svg" /&gt;&lt;/span&gt;
+        &lt;span&gt;&lt;img class="card-1-icon" src="/Images/vertical-three-dot.png" /&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+                <h2>Sample Cards - 2</h2>
+
+                <div class="card-2">
+                    <div class="img">
+                        <img src="/Images/flower-card.jpg" alt="pic">
+                    </div>
+                    <div class="content">
+                        <h2>Content Heading</h2>
+                        <small>Sub Heading</small>
+                        <p>This is the content paragraph.</p>
+                        <span class="price">Rs. 999</span>
+                        <span class="orgPrice">Rs.1099</span>
+                        <span class="discount">10%</span>
+                    </div>
+                    <div class="card-2-btn"><a href="#"><img src="/Images/cart-card.svg" />Add to
+                            cart</a href="#"></div>
+                </div>
+
+                <pre class="language-html"><code>&lt;div class="card-2"&gt;
+    &lt;div class="img"&gt;
+        &lt;img src="/Images/flower-card.jpg" alt=""&gt;
+    &lt;/div&gt;
+    &lt;div class="content"&gt;
+        &lt;h2&gt;Content Heading&lt;/h2&gt;
+        &lt;small&gt;Sub Heading&lt;/small&gt;
+        &lt;p&gt;This is the content paragraph.&lt;/p&gt;
+        &lt;span class="price"&gt;Rs. 999&lt;/span&gt;
+        &lt;span class="orgPrice"&gt;Rs.1099&lt;/span&gt;
+        &lt;span class="discount"&gt;10%&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="card-2-btn"&gt;&lt;a href="#"&gt;&lt;img src="/Images/cart-card.svg" /&gt;Add to
+            cart&lt;/a href="#"&gt;&lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+
+                <h2>Sample Cards - 3</h2>
+                <div class="card-3">
+                    <div class="img">
+                        <img src="/Images/image-card-3.jpg" alt="pic">
+                    </div>
+                    <div class="content">
+                        <h2>Content Heading</h2>
+                        <small>Sub Heading</small>
+                        <p>This is the content paragraph.</p>
+                    </div>
+                    <div class="card-3-btn"><a href="#">Go Somewhere</a href="#">
+                    </div>
+                </div>
+
+                <pre class="language-html"><code>&lt;div class="card-3"&gt;
+    &lt;div class="img"&gt;
+        &lt;img src="/Images/image-card-3.jpg" alt="pic"&gt;
+    &lt;/div&gt;
+    &lt;div class="content"&gt;
+        &lt;h2&gt;Content Heading&lt;/h2&gt;
+        &lt;small&gt;Sub Heading&lt;/small&gt;
+        &lt;p&gt;This is the content paragraph.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-3-btn"&gt;&lt;a href="#"&gt;Go Somewhere&lt;/a href="#"&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
 
             </div>
 
