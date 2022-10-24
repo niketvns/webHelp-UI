@@ -52,7 +52,8 @@ const docsVisibility = (val) => {
     if (val < 4) {
         let current = document.querySelector(".right-docs .visible");
         current.className = current.className.replace("visible", "invisible");
-        docsComponent[val].className = docsComponent[1].className.replace("invisible", "visible");
+        docsComponent[val].className = docsComponent[val].className.replace("invisible", "visible");
+        rightDocs.scroll(0, 0)
     }
 }
 
