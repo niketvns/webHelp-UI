@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kalam:wght@300;400;700&family=Sen:wght@400;700;800&display=swap');
+
+:root {
+    --nav-color: rgb(177, 180, 183);
+    --primary-color: rgb(0, 128, 128);
+    --secondary-color: #475569;
+    --tag-color: #1e40af;
+    --success-color: #115e59;
+    --danger-color: #9f1239;
+    --warning-color: #92400e;
+    --info-color: #6b21a8;
+    --light-color: #60a5fa;
+    --dark-color: #27272a;
+    --tags-color: #1d4ed8;
+    --footer-color: rgb(235, 235, 235);
+    --font-1: 'Handlee', cursive;
+    --font-2: 'Kalam', cursive;
+    --font-3: 'Sen', sans-serif;
+}
+
+#avatar-docs .profiles-circular {
+    margin: 25px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.7);
+    padding: 20px 0px;
+    border-radius: 30px;
+}
+
+.crl-profile-box img {
+    border: 2px solid var(--light-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.squre-profile-box img {
+    border: 2px solid var(--light-color);
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.crl-profile-box img:hover,
+.squre-profile-box img:hover {
+    transform: scale(0.95);
+    transition: 0.1s;
+}
+
+.profile-lg img {
+    width: 12rem;
+}
+
+.profile-mdl1 img {
+    width: 10rem;
+}
+
+.profile-mdl2 img {
+    width: 8rem;
+}
+
+.profile-sml1 img {
+    width: 6rem;
+}
+
+.profile-sml2 img {
+    width: 4rem;
+}

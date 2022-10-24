@@ -102,8 +102,8 @@
                         <a href="#buttons-docs">
                             <li>Button</li>
                         </a>
-                        <a href="#">
-                            <li>Avatar</li>
+                        <a href="#avatar-docs">
+                            <li>Profile</li>
                         </a>
                         <a href="#">
                             <li>Alerts</li>
@@ -133,7 +133,7 @@
                             <li>Dropdowns</li>
                         </a>
                         <a href="#">
-                            <li>Scrollbar</li>
+                            <li>Accordian</li>
                         </a>
                         <a href="#">
                             <li>Code Snippet</li>
@@ -148,7 +148,7 @@
         </div>
 
         <div class="right-docs">
-            <div class="visible docs-component" id="introduction-docs">
+            <div class="invisible docs-component" id="introduction-docs">
                 <h1>Getting Started with WebHelpUI</h1>
                 <p>WebHelpUI is a powerful, feature-packed frontend Component Library. Just Think what you want to Build
                     on your website and WebHelpUI Provides it in just a
@@ -411,9 +411,118 @@
 &lt;input type="submit" class="btn btn-tags" value="Submit"&gt;
 &lt;a href="#" class="btn btn-primary"&gt;Link&lt;/a&gt;</code></pre>
 
+            </div>
 
+
+            <div class="visible docs-component" id="avatar-docs">
+                <h1>Profiles</h1>
+                <p>Profiles gives good User Experience on the website, it can be used to show user/admin profiles or
+                    logo in the Navbar.</p>
+                <p>WebHelpUI provides different types of Profiles based on the size and design, you can pick any of them
+                    according to your
+                    requirement.</p>
+                <ol>
+                    <li>Circular Profile</li>
+                    <li>Squre Profiles</li>
+                </ol>
+
+                <h2>Circular Profiles</h2>
+                <p>Circular Profile can be used to show user profile or company logo. You can change the image also.</p>
+                <p>You can use this design by adding a class name
+                    <code>"crl-profile-box"</code> and use any size by adding class names <code>".profile-lg"</code>,
+                    <code>"profile-mdl1"</code>,<code>"profile-mdl2"</code>,<code>"profile-sml1"</code>,<code>"profile-sml2"</code>.
+                </p>
+                <p>You can also give custon size and style by using these class names using <code>!important</code>
+                    keyword
+                </p>
+                <div class="profiles-circular">
+                    <div class="crl-profile-box profile-lg">
+                        <img src="/Images/shiva-profile.jpg" alt="profile">
+                    </div>
+                    <div class="crl-profile-box profile-mdl1">
+                        <img src="/Images/shiva-profile.jpg" alt="profile">
+                    </div>
+                    <div class="crl-profile-box profile-mdl2">
+                        <img src="/Images/shiva-profile.jpg" alt="profile">
+                    </div>
+                    <div class="crl-profile-box profile-sml1">
+                        <img src="/Images/shiva-profile.jpg" alt="profile">
+                    </div>
+                    <div class="crl-profile-box profile-sml2">
+                        <img src="/Images/shiva-profile.jpg" alt="profile">
+                    </div>
+                </div>
+                <pre class="language-html"><code>&lt;div class="crl-profile-box profile-lg"&gt;
+    &lt;img src="/Images/shiva-profile.jpg" alt="profile"&gt;
+&lt;/div&gt;
+
+&lt;div class="crl-profile-box profile-mdl1"&gt;
+    &lt;img src="/Images/shiva-profile.jpg" alt="profile"&gt;
+&lt;/div&gt;
+
+&lt;div class="crl-profile-box profile-mdl2"&gt;
+    &lt;img src="/Images/shiva-profile.jpg" alt="profile"&gt;
+&lt;/div&gt;
+
+&lt;div class="crl-profile-box profile-sml1"&gt;
+    &lt;img src="/Images/shiva-profile.jpg" alt="profile"&gt;
+&lt;/div&gt;
+
+&lt;div class="crl-profile-box profile-sml2"&gt;
+    &lt;img src="/Images/shiva-profile.jpg" alt="profile"&gt;
+&lt;/div&gt;
+                </code></pre>
+
+
+                <h2>Squre Profiles</h2>
+                <p>Squre Profile can be used to show user profile or company logo. You can change the image also.</p>
+                <p>You can use this design by adding a class name
+                    <code>"squre-profile-box"</code> and use any size by adding class names <code>".profile-lg"</code>,
+                    <code>"profile-mdl1"</code>,<code>"profile-mdl2"</code>,<code>"profile-sml1"</code>,<code>"profile-sml2"</code>.
+                </p>
+                <p>You can also give custon size and style by using these class names using <code>!important</code>
+                    keyword
+                </p>
+                <div class="profiles-circular">
+                    <div class="squre-profile-box profile-lg">
+                        <img src="/Images/shiva-profile.jpg" alt="profile">
+                    </div>
+                    <div class="squre-profile-box profile-mdl1">
+                        <img src="/Images/shiva-profile.jpg" alt="profile">
+                    </div>
+                    <div class="squre-profile-box profile-mdl2">
+                        <img src="/Images/shiva-profile.jpg" alt="profile">
+                    </div>
+                    <div class="squre-profile-box profile-sml1">
+                        <img src="/Images/shiva-profile.jpg" alt="profile">
+                    </div>
+                    <div class="squre-profile-box profile-sml2">
+                        <img src="/Images/shiva-profile.jpg" alt="profile">
+                    </div>
+                </div>
+                <pre class="language-html"><code>&lt;div class="squre-profile-box profile-lg"&gt;
+    &lt;img src="/Images/shiva-profile.jpg" alt="profile"&gt;
+&lt;/div&gt;
+
+&lt;div class="squre-profile-box profile-mdl1"&gt;
+    &lt;img src="/Images/shiva-profile.jpg" alt="profile"&gt;
+&lt;/div&gt;
+
+&lt;div class="squre-profile-box profile-mdl2"&gt;
+    &lt;img src="/Images/shiva-profile.jpg" alt="profile"&gt;
+&lt;/div&gt;
+
+&lt;div class="squre-profile-box profile-sml1"&gt;
+    &lt;img src="/Images/shiva-profile.jpg" alt="profile"&gt;
+&lt;/div&gt;
+
+&lt;div class="squre-profile-box profile-sml2"&gt;
+    &lt;img src="/Images/shiva-profile.jpg" alt="profile"&gt;
+&lt;/div&gt;
+                </code></pre>
 
             </div>
+
 
         </div>
     </div>
