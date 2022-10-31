@@ -5,6 +5,7 @@
 @import url("/css/alert.css");
 @import url("/css/badge.css");
 @import url("/css/card.css");
+@import url("/css/accordian.css");
 
 :root {
     --nav-color: rgb(177, 180, 183);
@@ -214,7 +215,7 @@ nav.mobile .right-nav-content .nav-social {
 /* Header for Index.html  */
 
 header {
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -304,6 +305,20 @@ header .right-header img {
 
 .code-snippet div.code-toolbar>.toolbar {
     top: 1.2rem;
+}
+
+/* Accordian Index.html  */
+.accordian-index {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-2);
+}
+
+.accordian-index .accordian-1 {
+    max-width: 450px !important;
+    user-select: none;
 }
 
 
@@ -448,6 +463,7 @@ nav.mobile .docs-close-outline {
     color: #000000cc;
     font-family: var(--font-3);
     padding: 0rem 2.5rem;
+    font-size: 1.1rem;
 }
 
 .right-docs>div {
