@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kalam:wght@300;400;700&family=Sen:wght@400;700;800&display=swap');
+
+:root {
+    --nav-color: rgb(177, 180, 183);
+    --accordian-que-color: #6488ff;
+    --tag-color: #1e40af;
+    --success-color: #115e59;
+    --danger-color: #7f1d1d;
+    --warning-color: #92400e;
+    --info-color: #6b21a8;
+    --footer-color: rgb(235, 235, 235);
+    --font-1: 'Handlee', cursive;
+    --font-2: 'Kalam', cursive;
+    --font-3: 'Sen', sans-serif;
+}
+
+
+.accordian-1 {
+    margin: 40px 0px;
+}
+
+
+.accordian {
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 800px;
+    font-family: var(--font-2);
+    font-size: 1.2rem;
+}
+
+.accordian p {
+    padding: 10px;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px 10px;
+    user-select: none;
+}
+
+.accordian p.accordian-que {
+    border: 0.2px solid var(--accordian-que-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.accordian p.accordian-que span {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+}
+
+.accordian p.accordian-que:hover {
+    cursor: pointer;
+}
+
+.accordian p.accordian-ans {
+    display: none;
+}
+
+.accordian p.accordian-que span {
+    transition: 0.3s;
+    display: block;
+}
+
+.accordian-active {
+    background-color: red;
+}
