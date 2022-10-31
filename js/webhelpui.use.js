@@ -58,7 +58,7 @@ let docsComponent = document.querySelectorAll(".right-docs .docs-component");
 
 
 const docsVisibility = (val) => {
-    if (val < 10) {
+    if (val < 11) {
         let current = document.querySelector(".right-docs .visible");
         current.className = current.className.replace("visible", "invisible");
         docsComponent[val].className = docsComponent[val].className.replace("invisible", "visible");
@@ -143,5 +143,40 @@ if (accordianQue) {
                 statusAcc = closeAns(val);
             }
         });
+    }
+}
+
+
+
+// Login form 
+
+let loginUserName = document.querySelector(".login-container #userName")
+let loginPassword = document.querySelector(".login-container #password")
+let loginBtn = document.querySelector(".login-container button")
+let result = document.querySelector(".login-container .result")
+let p = document.querySelector(".login-container p")
+
+
+if (loginBtn) {
+    loginBtn.addEventListener("click", checkPassword)
+}
+
+function checkPassword() {
+    if (loginUserName.value.length != 0 && loginPassword.value.length != 0) {
+        if (loginPassword.value.length < 8) {
+            result.innerHTML = "Not Valid Password"
+            result.style.color = "red"
+            loginPassword.style.outline = "3px solid red"
+            loginUserName.style.outline = "3px solid red"
+            p.innerHTML = "❌ Length of Password Should be atleast 8"
+            p.style.color = "red"
+        } else {
+            result.innerHTML = "<p><i><b>Success 👍</b></i></p>"
+            result.style.color = "green"
+            loginPassword.style.outline = "3px solid green"
+            loginUserName.style.outline = "3px solid green"
+            p.innerHTML = "✔️ Length of Password Should be atleast 8"
+            p.style.color = "green"
+        }
     }
 }
