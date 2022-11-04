@@ -1,0 +1,45 @@
+.main-login-container {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 5px 5px 25px -5px #0000004d;
+    border-radius: 10px;
+}
+
+.login-container h3 span {
+    border-bottom: 2mm ridge #1d4ed8;
+}
+
+.login-container input {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 7px;
+    border: 0.2px solid black;
+}
+
+.login-container input:focus {
+    outline: 2px solid #1d4ed8;
+}
+
+.login-container button {
+    width: 80px;
+    font-size: 18px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.login-container p,
+.login-container .result {
+    text-align: center;
+}
