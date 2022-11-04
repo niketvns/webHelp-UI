@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Kalam:wght@300;400;700&family=Sen:wght@400;700;800&display=swap');
+
+:root {
+    --nav-color: rgb(177, 180, 183);
+    --primary-color: rgb(0, 128, 128);
+    --footer-color: rgb(235, 235, 235);
+    --form-color1: #7c97e1;
+    --form-color2: #1d4ed8;
+    --font-1: 'Handlee', cursive;
+    --font-2: 'Kalam', cursive;
+    --font-3: 'Sen', sans-serif;
+}
+
+
+.form {
+    margin: 40px 0px;
+}
+
+form.userform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--font-3);
+}
+
+form.userform input:not(input[type="radio"]),
+form.userform textarea {
+    height: 40px;
+    width: 80%;
+    max-width: 800px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 0.2px solid black;
+    font-size: 1.2rem;
+}
+
+form.userform input:not(input[type="radio"])::placeholder,
+form.userform textarea::placeholder {
+    font-size: 1rem;
+}
+
+form.userform textarea {
+    height: 80px;
+}
+
+form.userform .radio-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+form.userform .radio-input * {
+    cursor: pointer;
+}
+
+form.userform input:focus:not(input[type="radio"]),
+form.userform textarea:focus {
+    outline: 3px solid var(--form-color1);
+    border: 0.2px solid #8a8585;
+
+}
+
+form.userform button {
+    font-size: 1.2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0.5px solid var(--form-color);
+    background-color: var(--form-color2);
+    color: white;
+}
+
+form.userform button:active {
+    transform: scale(0.95);
+    box-shadow: 1px 1px 15px gray;
+}
+
+@media screen and (max-width: 400px) {
+
+    form.userform input:not(input[type="radio"]),
+    form.userform textarea {
+        width: 95%;
+    }
+}

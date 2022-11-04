@@ -6,6 +6,7 @@
 @import url("/css/badge.css");
 @import url("/css/card.css");
 @import url("/css/accordian.css");
+@import url("/css/form.css");
 
 :root {
     --nav-color: rgb(177, 180, 183);
