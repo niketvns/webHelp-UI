@@ -1016,6 +1016,176 @@
 &lt;/form&gt;</code></pre>
             </div>
 
+            <!-- Navbar Component  -->
+
+            <div class="invisible docs-component" id="navbar-docs">
+                <h1>Navbar</h1>
+                <p>Navigation bar is used to navigate through the web apps or websites. This navigation component is
+                    responsive. It is a hamburger menu in Android devices.</p>
+                <p>WebHelpUI provides a <b>responsive</b> navbar which works in all devices like desktop, android and
+                    tablets
+                    etc.
+                </p>
+
+                <div class="navbar-preview">
+
+                    <nav class="desktop-nav">
+                        <div class="nav-left">
+                            <div class="logo-nav">
+                                <a href="/"><img src="/Images/logo-final.png" alt="logo"></a>
+                            </div>
+                            <ul>
+                                <a href="/">
+                                    <li class="active">Home</li>
+                                </a>
+                                <a href="/html/documentation.html">
+                                    <li>Documentation</li>
+                                </a>
+                                <a href="/html/documentation.html">
+                                    <li>About US</li>
+                                </a>
+                            </ul>
+                        </div>
+
+                        <div class="nav-right">
+                            <img src="/Images/github.png" alt="img">
+                            <img src="/Images/linkedin.png" alt="">
+                            <img src="/Images/twitter.png" alt="">
+                        </div>
+                    </nav>
+
+                    <nav class="mobile-nav">
+                        <div class="nav-head">
+                            <div class="nav-left">
+                                <div class="logo-nav">
+                                    <a href="/"><img src="/Images/logo-final.png" alt="logo"></a>
+                                </div>
+                            </div>
+
+                            <div class="nav-right">
+                                <img src="/Images/menu-outline.svg" alt="img">
+                            </div>
+                        </div>
+
+                        <div class="nav-contents-all">
+                            <div class="nav-content">
+                                <div class="left-nav-content"></div>
+                                <div class="right-nav-content">
+                                    <div class="close-nav">
+                                        <h1 class="mobile-logo">Your Logo</h1>
+                                        <img class="close-icon" src="/Images/close-outline.svg" alt="">
+                                    </div>
+                                    <ul>
+                                        <a href="/">
+                                            <img class="mobile-icons" src="/Images/home-outline.svg" alt="">
+                                            <li class="active">Home</li>
+                                        </a>
+                                        <a href="/html/documentation.html">
+                                            <img class="mobile-icons" src="/Images/logo-web-component.svg" alt="">
+                                            <li>Documentation</li>
+                                        </a>
+                                        <a href="/html/documentation.html">
+                                            <img class="mobile-icons" src="/Images/information-circle-outline.svg"
+                                                alt="">
+                                            <li>About</li>
+                                        </a>
+                                    </ul>
+                                    <div class="nav-social">
+                                        <a href="#">
+                                            <img src="/Images/github.png" alt="ing">
+                                        </a>
+                                        <a href="#">
+                                            <img src="/Images/linkedin.png" alt="img">
+                                        </a>
+                                        <a href="#">
+                                            <img src="/Images/twitter.png" alt="img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+
+                <pre class="language-html"><code>&lt;nav class="desktop-nav"&gt;
+    &lt;div class="nav-left"&gt;
+        &lt;div class="logo-nav"&gt;
+            &lt;a href="/"&gt;&lt;img src="https://webhelp-ui.netlify.app/Images/logo-final.png" alt="logo"&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;ul&gt;
+            &lt;a href="/"&gt;
+                &lt;li class="active"&gt;Home&lt;/li&gt;
+            &lt;/a&gt;
+            &lt;a href="/html/documentation.html"&gt;
+                &lt;li&gt;Documentation&lt;/li&gt;
+            &lt;/a&gt;
+            &lt;a href="/html/documentation.html"&gt;
+                &lt;li&gt;About US&lt;/li&gt;
+            &lt;/a&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div class="nav-right"&gt;
+        &lt;img src="https://webhelp-ui.netlify.app/Images/github.png" alt="img"&gt;
+        &lt;img src="https://webhelp-ui.netlify.app/Images/linkedin.png" alt=""&gt;
+        &lt;img src="https://webhelp-ui.netlify.app/Images/twitter.png" alt=""&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;!-- Mobile NavBar --&gt;
+
+&lt;nav class="mobile-nav"&gt;
+    &lt;div class="nav-head"&gt;
+        &lt;div class="nav-left"&gt;
+            &lt;div class="logo-nav"&gt;
+                &lt;a href="/"&gt;&lt;img src="https://webhelp-ui.netlify.app/Images/logo-final.png" alt="logo"&gt;&lt;/a&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="nav-right"&gt;
+            &lt;img src="https://webhelp-ui.netlify.app/Images/menu-outline.svg" alt="img"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="nav-contents-all"&gt;
+        &lt;div class="nav-content"&gt;
+            &lt;div class="left-nav-content"&gt;&lt;/div&gt;
+            &lt;div class="right-nav-content"&gt;
+                &lt;div class="close-nav"&gt;
+                    &lt;h1 class="mobile-logo"&gt;Your Logo&lt;/h1&gt;
+                    &lt;img class="close-icon" src="https://webhelp-ui.netlify.app/Images/close-outline.svg" alt=""&gt;
+                &lt;/div&gt;
+                &lt;ul&gt;
+                    &lt;a href="/"&gt;
+                        &lt;img class="mobile-icons" src="https://webhelp-ui.netlify.app/Images/home-outline.svg" alt=""&gt;
+                        &lt;li class="active"&gt;Home&lt;/li&gt;
+                    &lt;/a&gt;
+                    &lt;a href="/html/documentation.html"&gt;
+                        &lt;img class="mobile-icons" src="https://webhelp-ui.netlify.app/Images/logo-web-component.svg" alt=""&gt;
+                        &lt;li&gt;Documentation&lt;/li&gt;
+                    &lt;/a&gt;
+                    &lt;a href="/html/documentation.html"&gt;
+                        &lt;img class="mobile-icons" src="https://webhelp-ui.netlify.app/Images/information-circle-outline.svg"
+                            alt=""&gt;
+                        &lt;li&gt;About&lt;/li&gt;
+                    &lt;/a&gt;
+                &lt;/ul&gt;
+                &lt;div class="nav-social"&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img src="https://webhelp-ui.netlify.app/Images/github.png" alt="ing"&gt;
+                    &lt;/a&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img src="https://webhelp-ui.netlify.app/Images/linkedin.png" alt="img"&gt;
+                    &lt;/a&gt;
+                    &lt;a href="#"&gt;
+                        &lt;img src="https://webhelp-ui.netlify.app/Images/twitter.png" alt="img"&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</code></pre>
+
+            </div>
+
 
         </div>
     </div>

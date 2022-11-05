@@ -58,7 +58,7 @@ let docsComponent = document.querySelectorAll(".right-docs .docs-component");
 
 
 const docsVisibility = (val) => {
-    if (val < 11) {
+    if (val < 12) {
         let current = document.querySelector(".right-docs .visible");
         current.className = current.className.replace("visible", "invisible");
         docsComponent[val].className = docsComponent[val].className.replace("invisible", "visible");
@@ -80,6 +80,8 @@ if (li) {
     }
 }
 
+
+// Alert Component 
 
 
 let alertComponent = document.querySelectorAll("div.alert");
@@ -180,3 +182,21 @@ function checkPassword() {
         }
     }
 }
+
+
+// Navbar Component
+
+let menuNavWHUI = document.querySelector(".mobile-nav .nav-right > img");
+let navContents = document.querySelector("nav.mobile-nav .nav-content");
+let navContentsAll = document.querySelector("nav.mobile-nav .nav-contents-all");
+let closeNavIcon = document.querySelector(".mobile-nav .close-nav > img");
+
+const showNavContents = () => {
+    navContentsAll.style.display = "block";
+
+}
+
+menuNavWHUI.addEventListener('click', showNavContents)
+closeNavIcon.addEventListener('click', () => {
+    navContentsAll.style.display = "none";
+})
