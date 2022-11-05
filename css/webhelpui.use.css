@@ -10,6 +10,7 @@
 @import url("/css/login.css");
 @import url("/css/navbar.css");
 @import url("/css/loader.css");
+@import url("/css/snackbar.css");
 
 :root {
     --nav-color: rgb(177, 180, 183);

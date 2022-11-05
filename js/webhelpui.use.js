@@ -58,7 +58,7 @@ let docsComponent = document.querySelectorAll(".right-docs .docs-component");
 
 
 const docsVisibility = (val) => {
-    if (val < 13) {
+    if (val < 14) {
         let current = document.querySelector(".right-docs .visible");
         current.className = current.className.replace("visible", "invisible");
         docsComponent[val].className = docsComponent[val].className.replace("invisible", "visible");
@@ -214,4 +214,39 @@ if (WHILoader) {
     setTimeout(() => {
         WHILoader.style.display = "none"
     }, 3000)
+}
+
+// Snackbar Component 
+
+let successSnackbarWarning = document.querySelector('.success-snackbar-warning');
+let errorSnackbarWarning = document.querySelector('.error-snackbar-warning');
+let warnSnackbarWarning = document.querySelector('.warning-snackbar-warning');
+let successWarnBtn = document.querySelector('.success-warn-btn');
+let errorWarnBtn = document.querySelector('.error-warn-btn');
+let warningWarnBtn = document.querySelector('.warning-warn-btn');
+
+const showSnackbarWarning = (event) => {
+
+    if (successWarnBtn === event.target) {
+        successSnackbarWarning.style.display = "block";
+        setTimeout(() => {
+            successSnackbarWarning.style.display = 'none';
+        }, 3000)
+    } else if (errorWarnBtn === event.target) {
+        errorSnackbarWarning.style.display = "block";
+        setTimeout(() => {
+            errorSnackbarWarning.style.display = 'none';
+        }, 3000)
+    } else if (warningWarnBtn === event.target) {
+        warnSnackbarWarning.style.display = "block";
+        setTimeout(() => {
+            warnSnackbarWarning.style.display = 'none';
+        }, 1000)
+    }
+}
+
+if (successWarnBtn || errorWarnBtn || warningWarnBtn) {
+    successWarnBtn.addEventListener('click', showSnackbarWarning)
+    errorWarnBtn.addEventListener('click', showSnackbarWarning)
+    warningWarnBtn.addEventListener('click', showSnackbarWarning)
 }
