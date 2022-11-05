@@ -9,6 +9,7 @@
 @import url("/css/form.css");
 @import url("/css/login.css");
 @import url("/css/navbar.css");
+@import url("/css/loader.css");
 
 :root {
     --nav-color: rgb(177, 180, 183);

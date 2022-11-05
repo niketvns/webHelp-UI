@@ -58,7 +58,7 @@ let docsComponent = document.querySelectorAll(".right-docs .docs-component");
 
 
 const docsVisibility = (val) => {
-    if (val < 12) {
+    if (val < 13) {
         let current = document.querySelector(".right-docs .visible");
         current.className = current.className.replace("visible", "invisible");
         docsComponent[val].className = docsComponent[val].className.replace("invisible", "visible");
@@ -193,10 +193,25 @@ let closeNavIcon = document.querySelector(".mobile-nav .close-nav > img");
 
 const showNavContents = () => {
     navContentsAll.style.display = "block";
-
 }
 
-menuNavWHUI.addEventListener('click', showNavContents)
-closeNavIcon.addEventListener('click', () => {
-    navContentsAll.style.display = "none";
-})
+if (menuNavWHUI) {
+    menuNavWHUI.addEventListener('click', showNavContents);
+}
+
+if (closeNavIcon) {
+    closeNavIcon.addEventListener('click', () => {
+        navContentsAll.style.display = "none";
+    })
+}
+
+
+// Loader Component
+
+let WHILoader = document.querySelector(".whi-loader");
+
+if (WHILoader) {
+    setTimeout(() => {
+        WHILoader.style.display = "none"
+    }, 3000)
+}

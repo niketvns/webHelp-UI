@@ -117,28 +117,31 @@
                         <a href="#accordian-docs">
                             <li>Accordian</li>
                         </a>
+                        <a href="#loader-docs">
+                            <li>Loader</li>
+                        </a>
+                        <a href="#navbar-docs">
+                            <li>Navbar</li>
+                        </a>
                         <a href="#form-docs">
                             <li>Form</li>
                         </a>
                         <a href="#login-docs">
                             <li>Login</li>
                         </a>
-                        <a href="#">
-                            <li>Navbar</li>
+                        <a href="#snackbar-docs">
+                            <li>Snackbar</li>
                         </a>
-                        <a href="#">
+                        <a href="#sidebar-docs">
                             <li>Sidebar</li>
                         </a>
-                        <a href="#">
+                        <a href="#list-docs">
                             <li>List</li>
                         </a>
-                        <a href="#">
+                        <a href="#dropdown-docs">
                             <li>Dropdowns</li>
                         </a>
-                        <a href="#">
-                            <li>Code Snippet</li>
-                        </a>
-                        <a href="#">
+                        <a href="#footer">
                             <li>Footer</li>
                         </a>
                     </ul>
@@ -148,6 +151,10 @@
         </div>
 
         <div class="right-docs">
+
+
+            <!-- Introduction Details -->
+
             <div class="visible docs-component" id="introduction-docs">
                 <h1>Getting Started with WebHelpUI</h1>
                 <p>WebHelpUI is a powerful, feature-packed frontend Component Library. Just Think what you want to Build
@@ -208,6 +215,8 @@
             </div>
 
 
+            <!-- Installation Intruction -->
+
             <div class="invisible docs-component" id="installation-docs">
                 <h1>How to install ?</h1>
                 <p>To use all features of WebHelpUI, Just Add CDN link of CSS and JS in <code>head</code> tag of
@@ -245,6 +254,8 @@
 
 
             </div>
+
+            <!-- Device Details  -->
 
             <div class="invisible docs-component" id="devices-docs">
                 <h1>Browsers and devices</h1>
@@ -322,6 +333,9 @@
 
 
             </div>
+
+
+            <!-- Button Component  -->
 
             <div class="invisible docs-component" id="buttons-docs">
                 <h1>Buttons</h1>
@@ -412,6 +426,9 @@
 &lt;a href="#" class="btn btn-primary"&gt;Link&lt;/a&gt;</code></pre>
 
             </div>
+
+
+            <!-- Avatar Component  -->
 
 
             <div class="invisible docs-component" id="avatar-docs">
@@ -524,6 +541,8 @@
             </div>
 
 
+            <!-- Alert Component  -->
+
             <div class="invisible docs-component" id="alert-docs">
                 <h1>Alerts</h1>
                 <p>Alerts are very important part of any website to show alerts show that user feels more connected and
@@ -563,6 +582,7 @@
             </div>
 
 
+            <!-- Badge Component -->
 
             <div class="invisible docs-component" id="badge-docs">
                 <h1>Badge</h1>
@@ -727,6 +747,8 @@
 
             </div>
 
+            <!-- Card Component -->
+
             <div class="invisible docs-component" id="card-docs">
                 <h1>Cards</h1>
                 <p>A <b>card</b> is a flexible and extensible content container. It includes options for headers and
@@ -843,6 +865,8 @@
             </div>
 
 
+            <!-- Accordian Component -->
+
             <div class="invisible docs-component" id="accordian-docs">
                 <h1>Accordian</h1>
                 <p>Build vertically collapsing accordions in combination with our Collapse JavaScript plugin. Accordians
@@ -921,100 +945,99 @@
 
             </div>
 
+            <!-- Loader Component  -->
 
-            <div class="invisible docs-component" id="form-docs">
-                <h1>Form</h1>
-                <p>Form play an important role in terms of taking input from user. WebHelpUI provides form also you
-                    can just add CDN link of CSS and copy-paste the below code into your document and you will get a
-                    very responsive and awesome form in your website. You can change the width of the form using
-                    <code>form</code> tag.
-                </p>
+            <div class="invisible docs-component" id="loader-docs">
+                <h1>Loader</h1>
+                <p>Loader activates when the page is loading and is shows a loading effect on website</p>
+                <p>WebHelpUI provides a Loader, You can use this by just adding <code>CSS</code> and <code>JS</code> CDN
+                    Link into your website.</p>
+                <p>Place the JavaScript Link at the end of body tag.</p>
 
-                <div class="form">
-                    <form class="userform" action="">
-                        <input type="text" name="name" id="form-name" placeholder="Enter Your Name" required
-                            autocomplete="off">
-                        <input type="number" name="phone" id="form-phone" placeholder="Mobile No" required
-                            autocomplete="off">
-                        <input type="email" name="email" id="form-email" placeholder="Email ID" required
-                            autocomplete="off">
-                        <input type="password" name="password" id="form-password" placeholder="Enter Your Password"
-                            required autocomplete="off">
-                        <textarea name="address" id="form-address" cols="" rows="" placeholder="Enter Your Address.."
-                            required autocomplete="off"></textarea>
-
-                        <div class="radio-input">
-                            <input type="radio" name="gender" id="gender-male" required>
-                            <label for="gender-male">Male</label>
-                            <input type="radio" name="gender" id="gender-female" required>
-                            <label for="gender-female">Female</label>
-                            <input type="radio" name="gender" id="gender-other" required>
-                            <label for="gender-other">Other</label>
-                        </div>
-
-                        <div class="buttons">
-                            <button type="submit">Submit</button>
-                            <button type="reset">Reset</button>
-                        </div>
-                    </form>
+                <h2>Loader-1</h2>
+                <div class="loader-preview">
+                    <div class="whi-loader-preview">
+                        <img src="/Images/loader-5.gif" alt="">
+                    </div>
                 </div>
 
-                <pre class="language-html"><code>&lt;form class="userform" action=""&gt;
-    &lt;input type="text" name="name" id="form-name" placeholder="Enter Your Name" required
-        autocomplete="off"&gt;
-    &lt;input type="number" name="phone" id="form-phone" placeholder="Mobile No" required
-        autocomplete="off"&gt;
-    &lt;input type="email" name="email" id="form-email" placeholder="Email ID" required
-        autocomplete="off"&gt;
-    &lt;input type="password" name="password" id="form-password" placeholder="Enter Your Password"
-        required autocomplete="off"&gt;
-    &lt;textarea name="address" id="form-address" cols="" rows="" placeholder="Enter Your Address.."
-        required autocomplete="off"&gt;&lt;/textarea&gt;
-    &lt;div class="radio-input"&gt;
-        &lt;input type="radio" name="gender" id="gender-male"&gt;
-        &lt;label for="gender-male"&gt;Male&lt;/label&gt;
-        &lt;input type="radio" name="gender" id="gender-female"&gt;
-        &lt;label for="gender-female"&gt;Female&lt;/label&gt;
-        &lt;input type="radio" name="gender" id="gender-other"&gt;
-        &lt;label for="gender-other"&gt;Other&lt;/label&gt;
-    &lt;/div&gt;
-&lt;div class="buttons"&gt;
-        &lt;button type="submit"&gt;Submit&lt;/button&gt;
-        &lt;button type="reset"&gt;Reset&lt;/button&gt;
-    &lt;/div&gt;
-&lt;/form&gt;</code></pre>
+                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+    &lt;img src="/Images/loader-5.gif" alt=""&gt;
+&lt;/div&gt;</code></pre>
+
+                <h2>Loader-2</h2>
+                <div class="loader-preview">
+                    <div class="whi-loader-preview">
+                        <img src="/Images/loader-6.gif" alt="">
+                    </div>
+                </div>
+                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+    &lt;img src="/Images/loader-6.gif" alt=""&gt;
+&lt;/div&gt;</code></pre>
+
+                <h2>Loader-3</h2>
+                <div class="loader-preview">
+                    <div class="whi-loader-preview">
+                        <img src="/Images/loader-7.gif" alt="">
+                    </div>
+                </div>
+
+                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+    &lt;img src="/Images/loader-7.gif" alt=""&gt;
+&lt;/div&gt;</code></pre>
+                <h2>Loader-4</h2>
+                <div class="loader-preview">
+                    <div class="whi-loader-preview">
+                        <img src="/Images/loader-3.gif" alt="">
+                    </div>
+                </div>
+
+                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+    &lt;img src="/Images/loader-3.gif" alt=""&gt;
+&lt;/div&gt;</code></pre>
+                <h2>Loader-5</h2>
+                <div class="loader-preview">
+                    <div class="whi-loader-preview">
+                        <img src="/Images/loader-4.gif" alt="">
+                    </div>
+                </div>
+
+                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+    &lt;img src="/Images/loader-4.gif" alt=""&gt;
+&lt;/div&gt;</code></pre>
+                <h2>Loader-6</h2>
+                <div class="loader-preview">
+                    <div class="whi-loader-preview">
+                        <img src="/Images/loader.gif" alt="">
+                    </div>
+                </div>
+
+                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+    &lt;img src="/Images/loader.gif" alt=""&gt;
+&lt;/div&gt;</code></pre>
+                <h2>Loader-7</h2>
+                <div class="loader-preview">
+                    <div class="whi-loader-preview">
+                        <img src="/Images/loader-2.gif" alt="">
+                    </div>
+                </div>
+
+                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+    &lt;img src="/Images/loader-2.gif" alt=""&gt;
+&lt;/div&gt;</code></pre>
+                <h2>Loader-8</h2>
+                <div class="loader-preview">
+                    <div class="whi-loader-preview">
+                        <img src="/Images/loader-8.gif" alt="">
+                    </div>
+                </div>
+
+                <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
+    &lt;img src="/Images/loader-8.gif" alt=""&gt;
+&lt;/div&gt;</code></pre>
 
             </div>
 
-            <div class="invisible docs-component" id="login-docs">
-                <h1>Login</h1>
-                <p>Login Form is used to user login for user account. WebHelpUI provides login form also you
-                    can just add CDN link of CSS and JavaScript, copy-paste the below code into your document and you
-                    will get a
-                    very responsive and awesome Login form in your website. You can change the width of the form using
-                    <code>.login-container</code> className.
-                </p>
-
-                <div class="main-login-container">
-                    <form action="" class="login-container">
-                        <h3><span>Login Panel</span></h3>
-                        <input id="userName" type="text" placeholder="user name" required autocomplete="off">
-                        <input id="password" type="password" placeholder="Password" required>
-                        <button type="submit">Submit</button>
-                        <div class="result"></div>
-                        <p>⭐ Length of Password Should be atleast 8</p>
-                    </form>
-                </div>
-
-                <pre class="language-html"><code>&lt;form action="" class="login-container"&gt;
-    &lt;h3&gt;Login Panel&lt;/h3&gt;
-    &lt;input id="userName" type="text" placeholder="user name" required autocomplete="off"&gt;
-    &lt;input id="password" type="password" placeholder="Password" required&gt;
-    &lt;button type="submit"&gt;Submit&lt;/button&gt;
-    &lt;div class="result"&gt;&lt;/div&gt;
-    &lt;p&gt;⭐ Length of Password Should be atleast 8&lt;/p&gt;
-&lt;/form&gt;</code></pre>
-            </div>
 
             <!-- Navbar Component  -->
 
@@ -1184,6 +1207,124 @@
     &lt;/div&gt;
 &lt;/nav&gt;</code></pre>
 
+            </div>
+
+
+
+            <!-- Form Component  -->
+
+            <div class="invisible docs-component" id="form-docs">
+                <h1>Form</h1>
+                <p>Form play an important role in terms of taking input from user. WebHelpUI provides form also you
+                    can just add CDN link of CSS and copy-paste the below code into your document and you will get a
+                    very responsive and awesome form in your website. You can change the width of the form using
+                    <code>form</code> tag.
+                </p>
+
+                <div class="form">
+                    <form class="userform" action="">
+                        <input type="text" name="name" id="form-name" placeholder="Enter Your Name" required
+                            autocomplete="off">
+                        <input type="number" name="phone" id="form-phone" placeholder="Mobile No" required
+                            autocomplete="off">
+                        <input type="email" name="email" id="form-email" placeholder="Email ID" required
+                            autocomplete="off">
+                        <input type="password" name="password" id="form-password" placeholder="Enter Your Password"
+                            required autocomplete="off">
+                        <textarea name="address" id="form-address" cols="" rows="" placeholder="Enter Your Address.."
+                            required autocomplete="off"></textarea>
+
+                        <div class="radio-input">
+                            <input type="radio" name="gender" id="gender-male" required>
+                            <label for="gender-male">Male</label>
+                            <input type="radio" name="gender" id="gender-female" required>
+                            <label for="gender-female">Female</label>
+                            <input type="radio" name="gender" id="gender-other" required>
+                            <label for="gender-other">Other</label>
+                        </div>
+
+                        <div class="buttons">
+                            <button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
+
+                <pre class="language-html"><code>&lt;form class="userform" action=""&gt;
+    &lt;input type="text" name="name" id="form-name" placeholder="Enter Your Name" required
+        autocomplete="off"&gt;
+    &lt;input type="number" name="phone" id="form-phone" placeholder="Mobile No" required
+        autocomplete="off"&gt;
+    &lt;input type="email" name="email" id="form-email" placeholder="Email ID" required
+        autocomplete="off"&gt;
+    &lt;input type="password" name="password" id="form-password" placeholder="Enter Your Password"
+        required autocomplete="off"&gt;
+    &lt;textarea name="address" id="form-address" cols="" rows="" placeholder="Enter Your Address.."
+        required autocomplete="off"&gt;&lt;/textarea&gt;
+    &lt;div class="radio-input"&gt;
+        &lt;input type="radio" name="gender" id="gender-male"&gt;
+        &lt;label for="gender-male"&gt;Male&lt;/label&gt;
+        &lt;input type="radio" name="gender" id="gender-female"&gt;
+        &lt;label for="gender-female"&gt;Female&lt;/label&gt;
+        &lt;input type="radio" name="gender" id="gender-other"&gt;
+        &lt;label for="gender-other"&gt;Other&lt;/label&gt;
+    &lt;/div&gt;
+&lt;div class="buttons"&gt;
+        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+        &lt;button type="reset"&gt;Reset&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</code></pre>
+
+            </div>
+
+
+            <!-- Login Component  -->
+
+            <div class="invisible docs-component" id="login-docs">
+                <h1>Login</h1>
+                <p>Login Form is used to user login for user account. WebHelpUI provides login form also you
+                    can just add CDN link of CSS and JavaScript, copy-paste the below code into your document and you
+                    will get a
+                    very responsive and awesome Login form in your website. You can change the width of the form using
+                    <code>.login-container</code> className.
+                </p>
+
+                <div class="main-login-container">
+                    <form action="" class="login-container">
+                        <h3><span>Login Panel</span></h3>
+                        <input id="userName" type="text" placeholder="user name" required autocomplete="off">
+                        <input id="password" type="password" placeholder="Password" required>
+                        <button type="submit">Submit</button>
+                        <div class="result"></div>
+                        <p>⭐ Length of Password Should be atleast 8</p>
+                    </form>
+                </div>
+
+                <pre class="language-html"><code>&lt;form action="" class="login-container"&gt;
+    &lt;h3&gt;Login Panel&lt;/h3&gt;
+    &lt;input id="userName" type="text" placeholder="user name" required autocomplete="off"&gt;
+    &lt;input id="password" type="password" placeholder="Password" required&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+    &lt;div class="result"&gt;&lt;/div&gt;
+    &lt;p&gt;⭐ Length of Password Should be atleast 8&lt;/p&gt;
+&lt;/form&gt;</code></pre>
+            </div>
+
+
+            <!-- SnackBar Snippet Component  -->
+
+            <div class="invisible docs-component" id="snackbar-docs">
+                <h1>Snack Bar</h1>
+                <p>This component can be used for toast or snackbar component. Snackbar is to used show message that
+                    need user action </p>
+                <p>You can use snackbar to show notifications and error,sucess and warn messages.</p>
+                <p>WebHelpUI provides different types of snackbars based on the situation, you can pick any of them
+                    according to your
+                    requirement.</p>
+
+                <div class="snackbar-preview">
+
+                </div>
             </div>
 
 
