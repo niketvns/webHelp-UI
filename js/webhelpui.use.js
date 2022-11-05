@@ -152,7 +152,7 @@ if (accordianQue) {
 
 let loginUserName = document.querySelector(".login-container #userName")
 let loginPassword = document.querySelector(".login-container #password")
-let loginBtn = document.querySelector(".login-container button")
+let loginBtn = document.querySelector(".login-container input[type='submit']")
 let result = document.querySelector(".login-container .result")
 let p = document.querySelector(".login-container p")
 

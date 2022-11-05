@@ -1,3 +1,12 @@
+#loader-docs ol a {
+    text-decoration: none;
+    color: rgb(64, 39, 225);
+}
+
+#loader-docs ol a:hover {
+    text-decoration: underline;
+}
+
 .loader-preview {
     height: 10vw;
     position: relative;

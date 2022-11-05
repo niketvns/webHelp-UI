@@ -29,9 +29,10 @@
         </div>
 
         <div class="nav-right">
-            <img src="/Images/github.png" alt="">
-            <img src="/Images/linkedin.png" alt="">
-            <img src="/Images/twitter.png" alt="">
+            <a href="https://www.linkedin.com/in/niket-kumar-mishra-37ab5a215/"><img src="/Images/linkedin.png"
+                    alt=""></a>
+            <a href="https://twitter.com/Niketmishravns"><img src="/Images/twitter.png" alt=""></a>
+            <a href="https://github.com/niketvns"><img src="/Images/github.png" alt=""></a>
         </div>
     </nav>
 
@@ -219,7 +220,8 @@
 
             <div class="invisible docs-component" id="installation-docs">
                 <h1>How to install ?</h1>
-                <p>To use all features of WebHelpUI, Just Add CDN link of CSS and JS in <code>head</code> tag of
+                <p>To use all features of WebHelpUI, Just Add CDN Link of css in <code>head</code> tag and JavaScript at
+                    the end of <code>body</code> tag of
                     <code>index.html</code> file. After adding CDN links Just search for your UI like navbar, button,
                     form etc in WebHelpUI components and Copy the HTML code given then add the code in your HTML file
                     where you want to add this UI.
@@ -232,7 +234,8 @@
                 <h3>Examples: <small>Add button in your website</small></h3>
 
                 <ol>
-                    <li>Add CDN Link of css and JavaScript(JS optional) in <code>head</code> tag</li>
+                    <li>Add CDN Link of css in <code>head</code> tag and JavaScript at the end of <code>body</code> tag
+                    </li>
                     <pre class="language-html"><code>&lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
@@ -240,7 +243,11 @@
     &lt;link rel="stylesheet" href="https://webhelp-ui.netlify.app/css/webhelpui.use.css"&gt;
     &lt;script src="https://webhelp-ui.netlify.app/js/webhelpui.use.js" &gt;&lt;/script&gt;
     &lt;title&gt;Button-Preview&lt;/title&gt;
-&lt;/head&gt;</code></pre>
+&lt;/head&gt;
+&lt;body&gt;
+        
+    &lt;script src="https://webhelp-ui.netlify.app/js/webhelpui.use.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre>
 
                     <li>Copy the HTML code of Button of your choice from WebHelpUI components</li>
                     <div class="button-preview">
@@ -950,11 +957,24 @@
             <div class="invisible docs-component" id="loader-docs">
                 <h1>Loader</h1>
                 <p>Loader activates when the page is loading and is shows a loading effect on website</p>
-                <p>WebHelpUI provides a Loader, You can use this by just adding <code>CSS</code> and <code>JS</code> CDN
-                    Link into your website.</p>
+                <p>WebHelpUI provides different types of Loader, You can use this by just adding <code>CSS</code> and
+                    <code>JS</code> CDN
+                    Link into your document.
+                </p>
                 <p>Place the JavaScript Link at the end of body tag.</p>
+                <ol>
+                    <li><a href="#loader-1">Loader-1</a></li>
+                    <li><a href="#loader-2">Loader-2</a></li>
+                    <li><a href="#loader-3">Loader-3</a></li>
+                    <li><a href="#loader-4">Loader-4</a></li>
+                    <li><a href="#loader-5">Loader-5</a></li>
+                    <li><a href="#loader-6">Loader-6</a></li>
+                    <li><a href="#loader-1">Loader-1</a></li>
+                    <li><a href="#loader-7">Loader-7</a></li>
+                    <li><a href="#loader-8">Loader-8</a></li>
+                </ol>
 
-                <h2>Loader-1</h2>
+                <h2 id="loader-1">Loader-1</h2>
                 <div class="loader-preview">
                     <div class="whi-loader-preview">
                         <img src="/Images/loader-5.gif" alt="">
@@ -965,7 +985,7 @@
     &lt;img src="/Images/loader-5.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
 
-                <h2>Loader-2</h2>
+                <h2 id="loader-2">Loader-2</h2>
                 <div class="loader-preview">
                     <div class="whi-loader-preview">
                         <img src="/Images/loader-6.gif" alt="">
@@ -975,7 +995,7 @@
     &lt;img src="/Images/loader-6.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
 
-                <h2>Loader-3</h2>
+                <h2 id="loader-3">Loader-3</h2>
                 <div class="loader-preview">
                     <div class="whi-loader-preview">
                         <img src="/Images/loader-7.gif" alt="">
@@ -985,7 +1005,7 @@
                 <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/Images/loader-7.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
-                <h2>Loader-4</h2>
+                <h2 id="loader-4">Loader-4</h2>
                 <div class="loader-preview">
                     <div class="whi-loader-preview">
                         <img src="/Images/loader-3.gif" alt="">
@@ -995,7 +1015,7 @@
                 <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/Images/loader-3.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
-                <h2>Loader-5</h2>
+                <h2 id="loader-5">Loader-5</h2>
                 <div class="loader-preview">
                     <div class="whi-loader-preview">
                         <img src="/Images/loader-4.gif" alt="">
@@ -1005,7 +1025,7 @@
                 <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/Images/loader-4.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
-                <h2>Loader-6</h2>
+                <h2 id="loader-6">Loader-6</h2>
                 <div class="loader-preview">
                     <div class="whi-loader-preview">
                         <img src="/Images/loader.gif" alt="">
@@ -1015,7 +1035,7 @@
                 <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/Images/loader.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
-                <h2>Loader-7</h2>
+                <h2 id="loader-7">Loader-7</h2>
                 <div class="loader-preview">
                     <div class="whi-loader-preview">
                         <img src="/Images/loader-2.gif" alt="">
@@ -1025,7 +1045,7 @@
                 <pre class="language-html"><code>&lt;div class="whi-loader"&gt;
     &lt;img src="/Images/loader-2.gif" alt=""&gt;
 &lt;/div&gt;</code></pre>
-                <h2>Loader-8</h2>
+                <h2 id="loader-8">Loader-8</h2>
                 <div class="loader-preview">
                     <div class="whi-loader-preview">
                         <img src="/Images/loader-8.gif" alt="">
@@ -1282,19 +1302,101 @@
 
             <div class="invisible docs-component" id="login-docs">
                 <h1>Login</h1>
-                <p>Login Form is used to user login for user account. WebHelpUI provides login form also you
-                    can just add CDN link of CSS and JavaScript, copy-paste the below code into your document and you
+                <p>Login Form is used to login for user account. <b>WebHelpUI</b> provides login form also you
+                    can just add CDN link of <code>CSS</code> and <code>JavaScript</code>, copy-paste the below code
+                    into your
+                    document and you
                     will get a
                     very responsive and awesome Login form in your website. You can change the width of the form using
-                    <code>.login-container</code> className.
+                    className.
                 </p>
 
-                <div class="main-login-container">
+                <h2>Login Form - 1</h2>
+
+                <div class="main-login-preview">
+
+                    <div class="login-container-1">
+                        <form action="">
+                            <h3>Log in</h3>
+                            <div class="inputBox">
+                                <span>Username</span>
+                                <div class="box">
+                                    <div class="icon">
+                                        <img src="/Images/user-icon.svg" alt="">
+                                    </div>
+                                    <input type="text" placeholder="username">
+                                </div>
+                            </div>
+                            <div class="inputBox">
+                                <span>Password</span>
+                                <div class="box">
+                                    <div class="icon">
+                                        <img src="/Images/lock-closed-icon.svg" alt="">
+                                    </div>
+                                    <input type="password" placeholder="password">
+                                </div>
+                            </div>
+                            <label for="">
+                                <input type="checkbox" name="" id=""> Remember me
+                            </label>
+                            <div class="inputBox">
+                                <div class="box">
+                                    <input type="submit" value="Log in">
+                                </div>
+                            </div>
+                            <div class="forget-pass">
+                                <a href="#" class="forgot">Forget Password</a>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <pre class="language-html"><code>&lt;div class="login-container-1"&gt;
+    &lt;form action=""&gt;
+        &lt;h3&gt;Log in&lt;/h3&gt;
+        &lt;div class="inputBox"&gt;
+            &lt;span&gt;Username&lt;/span&gt;
+            &lt;div class="box"&gt;
+                &lt;div class="icon"&gt;
+                    &lt;img src="/Images/user-icon.svg" alt=""&gt;
+                &lt;/div&gt;
+                &lt;input type="text" placeholder="username"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="inputBox"&gt;
+            &lt;span&gt;Password&lt;/span&gt;
+            &lt;div class="box"&gt;
+                &lt;div class="icon"&gt;
+                    &lt;img src="/Images/lock-closed-icon.svg" alt=""&gt;
+                &lt;/div&gt;
+                &lt;input type="password" placeholder="password"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;label for=""&gt;
+            &lt;input type="checkbox" name="" id=""&gt; Remember me
+        &lt;/label&gt;
+        &lt;div class="inputBox"&gt;
+            &lt;div class="box"&gt;
+                &lt;input type="submit" value="Log in"&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="forget-pass"&gt;
+            &lt;a href="#" class="forgot"&gt;Forget Password&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+&lt;/div&gt;</code></pre>
+
+                <br>
+
+
+                <h2>Login Form - 2</h2>
+                <div class="main-login-preview">
                     <form action="" class="login-container">
                         <h3><span>Login Panel</span></h3>
-                        <input id="userName" type="text" placeholder="user name" required autocomplete="off">
+                        <input id="userName" type="text" placeholder="username" required autocomplete="off">
                         <input id="password" type="password" placeholder="Password" required>
-                        <button type="submit">Submit</button>
+                        <input type="submit" value="Log in">
                         <div class="result"></div>
                         <p>⭐ Length of Password Should be atleast 8</p>
                     </form>
@@ -1375,7 +1477,7 @@
 
                 <div class="footer-preview">
                     <footer>
-                        <img src="" alt="Your-logo">
+                        <img src="https://webhelp-ui.netlify.app/Images/logo-final.png" alt="Your-logo">
                         <p>&copy; 2022 | Company-Name | All rights reserved.</p>
                     </footer>
                 </div>
