@@ -1,5 +1,5 @@
 let menu = document.querySelector(".mobile .nav-right > img");
-let closeNav = document.querySelector(".close-nav > img");
+let closeNav = document.querySelector(".close-nav .close-icon");
 let closeNavAnyWay = document.querySelector(".left-nav-content");
 let slideBar = document.querySelector(".nav-content");
 let loader = document.querySelector(".loader");
