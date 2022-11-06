@@ -17,6 +17,12 @@
     --nav-color: rgb(177, 180, 183);
     --primary-color: rgb(0, 128, 128);
     --footer-color: rgb(235, 235, 235);
+    --tag-color: #1e40af;
+    --success-color: #115e59;
+    --danger-color: #7f1d1d;
+    --warning-color: #92400e;
+    --info-color: #6b21a8;
+    --tags-color: #1d4ed8;
     --font-1: 'Handlee', cursive;
     --font-2: 'Kalam', cursive;
     --font-3: 'Sen', sans-serif;
@@ -92,8 +98,13 @@ nav.desktop .nav-left li {
 
 nav.desktop .nav-left li.active {
     background-color: var(--primary-color);
-    border-radius: 10px;
     color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav.desktop .nav-left li:hover:not(.active) {
@@ -106,6 +117,21 @@ nav.desktop .nav-right {
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+
+nav.desktop .nav-right a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }
 
 nav.desktop .nav-right *:hover {
@@ -156,6 +182,7 @@ nav.mobile .right-nav-content {
     min-width: 250px;
     background-color: white;
     padding: 20px;
+    overflow: auto;
 }
 
 .close-nav {
@@ -174,15 +201,37 @@ nav.mobile .right-nav-content {
 }
 
 .close-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
     position: fixed;
     right: 30px;
     top: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }
+
+.close-icon img {
+    width: 20px;
+}
+
+.close-icon:active {
+    transition: 0.2s;
+    transform: scale(0.9);
+}
+
 
 
 nav.mobile .right-nav-content ul {
     list-style: none;
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -200,10 +249,40 @@ nav.mobile .right-nav-content ul a {
     align-items: center;
     gap: 20px;
     color: black;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 10px 20px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }
 
-nav.mobile .right-nav-content ul a:nth-child(2) {
-    margin-bottom: 30px;
+nav.mobile .right-nav-content ul a:active {
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+nav.mobile .right-nav-content ul .mobile-icons {
+    position: relative;
+    min-width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.15em;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav.mobile .right-nav-content ul .mobile-icons img {
+    width: 25px;
 }
 
 nav.mobile .right-nav-content .nav-social {
@@ -211,6 +290,26 @@ nav.mobile .right-nav-content .nav-social {
     display: flex;
     justify-content: center;
     gap: 10%;
+}
+
+nav.mobile .right-nav-content .nav-social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+        5px 5px 7px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav.mobile .right-nav-content .nav-social a:active {
+    transform: scale(0.9);
+    transition: 0.2s;
 }
 
 ::selection {
@@ -221,6 +320,7 @@ nav.mobile .right-nav-content .nav-social {
 /* Header for Index.html  */
 
 header {
+    width: 98%;
     min-height: 80vh;
     display: flex;
     justify-content: center;
@@ -268,11 +368,14 @@ header .left-header button {
     background-color: var(--primary-color);
     color: white;
     cursor: pointer;
+    box-shadow: 10px 10px 70px rgba(0, 0, 0, 0.5),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
 }
 
 header .left-header button:hover {
-    color: black;
-    background-color: #6c949a;
+    background-color: var(--tag-color);
     transition: 0.2s;
 }
 
@@ -353,6 +456,20 @@ footer img {
 nav.mobile .docs-close-outline {
     display: none;
 }
+
+nav.mobile .docs-close-outline .docs-close-img-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(0, 0, 0, 0.25),
+        inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+        inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
 
 .main-docs {
     margin-top: 10px;
@@ -610,6 +727,10 @@ button#btn-secondary:hover {
         display: grid;
         grid-template-columns: 3;
     }
+
+    nav.docs-mobile .docs-menu {
+        width: 50px;
+    }
 }
 
 
@@ -684,6 +805,7 @@ button#btn-secondary:hover {
 
     .right-docs {
         width: 100vw;
+        padding: 0 1.5rem;
     }
 }
 
@@ -694,7 +816,7 @@ button#btn-secondary:hover {
     }
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:360px) {
     html {
         font-size: 11px;
     }
@@ -706,4 +828,18 @@ button#btn-secondary:hover {
     .button-preview {
         gap: 6px;
     }
+
+    nav.mobile .left-nav-content {
+        width: 10vw;
+    }
+
+    nav.mobile .right-nav-content {
+        width: 90vw;
+    }
+
+    nav.mobile .right-nav-content ul {
+        padding: 10px 10px 30px 0px;
+        margin: 30px 0px;
+    }
+
 }
